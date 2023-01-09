@@ -12,16 +12,16 @@ const Header: React.FC = () => {
     <HeaderBackground>
       <HeaderWrapper>
         <HeaderContainer>
-          <Link href="/" passHref>
+          <Link href="#" passHref>
             software
           </Link>
-          <Link href="/chatbots" passHref>
+          <Link href="#" passHref>
             educativo
           </Link>
-          <Link href="/notificacoes" passHref>
+          <Link href="#" passHref>
             outros desdobramentos
           </Link>
-          <Link href="/aplicativos" passHref>
+          <Link href="#" passHref>
             <BlackDot />
           </Link>
         </HeaderContainer>

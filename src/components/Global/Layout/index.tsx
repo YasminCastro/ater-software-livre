@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 import GlobalStyle from "@/styles/GlobalStyles";
 
-const Layout: React.FC = ({ children }: any): JSX.Element => {
+const Layout: React.FC<any> = ({ children }): JSX.Element => {
   return (
     <>
       <GlobalStyle />
