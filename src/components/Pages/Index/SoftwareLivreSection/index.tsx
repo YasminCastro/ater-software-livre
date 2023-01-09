@@ -1,4 +1,4 @@
-import { Container, Left, Right } from "./styles";
+import { Container, Left, Results, Right, SearchBar } from "./styles";
 
 const SoftwareLivreSection: React.FC = () => {
   return (
@@ -6,7 +6,10 @@ const SoftwareLivreSection: React.FC = () => {
       <Left>
         <h1>software livre</h1>
       </Left>
-      <Right></Right>
+      <Right>
+        <SearchBar placeholder="campo de busca" />
+        <Results />
+      </Right>
     </Container>
   );
 };

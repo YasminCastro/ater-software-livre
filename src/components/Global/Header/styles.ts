@@ -21,7 +21,6 @@ export const HeaderWrapper = styled.header`
   justify-content: flex-end;
 
   min-height: 64px;
-  position: fixed;
   z-index: 100;
 `;
 
