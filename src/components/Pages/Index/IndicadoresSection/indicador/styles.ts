@@ -15,10 +15,7 @@ export const Container = styled.div`
     height: 70px;
   }
 
-  div {
-    width: 538px;
-    height: 338px;
-    background: ${colors.white} 0% 0% no-repeat padding-box;
+  img {
     border: 1px solid ${colors.grey};
   }
 `;

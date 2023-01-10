@@ -1,5 +1,6 @@
 import Indicador from "./indicador";
 import {
+  ButtonsBlock,
   Container,
   Content,
   ContentBlock,

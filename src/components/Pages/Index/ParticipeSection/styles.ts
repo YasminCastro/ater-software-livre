@@ -30,6 +30,7 @@ export const Square = styled.div`
 `;
 
 export const Title = styled.div`
+  margin-bottom: 50px;
   display: flex;
 
   h2 {
@@ -45,22 +46,24 @@ export const Title = styled.div`
 `;
 
 export const Content = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  width: 1088px;
+
+  color: ${colors.white};
+  font-size: 24px;
 `;
 
 export const ButtonsBlock = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-
   a {
     border: 1px solid ${colors.grey};
     background: ${colors.white};
-    padding: 28px 112px;
+    padding: 20px 50px;
 
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
+
+    :hover {
+      background: ${colors.grey};
+      transition: 0.5s;
+    }
   }
 `;

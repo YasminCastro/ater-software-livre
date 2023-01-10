@@ -4,10 +4,11 @@ const Indicador: React.FC<{ title: string; image?: string }> = ({
   title,
   image,
 }) => {
+  const imagePlaceholder = "";
   return (
     <Container>
       <p>{title}</p>
-      <div></div>
+      <img src="placeholder.png" width={538} />
     </Container>
   );
 };
