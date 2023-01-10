@@ -10,35 +10,27 @@ export const HeaderBackground = styled.div`
   position: absolute;
   top: 0;
 
-  border: 1px solid #707070;
+  border-bottom: 1px solid #707070;
 `;
 
 export const HeaderWrapper = styled.header`
-  width: 100%;
-  max-width: 100vw;
-
   display: flex;
   justify-content: flex-end;
+  padding: 19px 158px 19px 0;
 
-  min-height: 64px;
+  max-height: 75px;
   z-index: 100;
 `;
 
 export const HeaderContainer = styled.div`
   width: 100%;
-  max-width: 1024px;
+  max-width: 100vw;
+  max-height: 75px;
+  z-index: 100;
 
   display: flex;
+  justify-content: flex-end;
   gap: 87px;
-  padding-top: 19px;
-
-  @media (max-width: 1088px) {
-    margin: 0 32px;
-  }
-
-  @media (max-width: 500px) {
-    margin: 0 20px;
-  }
 
   a {
     color: ${colors.black};

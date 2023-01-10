@@ -17,8 +17,6 @@ export const Container = styled.section`
 `;
 
 export const Left = styled.div`
-  border: 1px solid red;
-
   h1 {
     font-size: 60px;
     font-weight: 700;
@@ -41,7 +39,6 @@ export const Left = styled.div`
 `;
 
 export const Right = styled.div`
-  border: 1px solid red;
   width: 100%;
   max-width: 582px;
 `;

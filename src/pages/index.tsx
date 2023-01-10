@@ -1,3 +1,5 @@
+import MetodologiaSection from "@/components/Pages/Index/MetodologiaSection";
+import { Square } from "@/components/Pages/Index/MetodologiaSection/styles";
 import SoftwareLivreSection from "@/components/Pages/Index/SoftwareLivreSection";
 import { PageContainer, PageWrapper } from "@/styles/Page";
 import Layout from "../components/Global/Layout";
@@ -9,6 +11,7 @@ export default function Home() {
         <PageWrapper>
           <PageContainer>
             <SoftwareLivreSection />
+            <MetodologiaSection />
           </PageContainer>
         </PageWrapper>
       </Layout>
