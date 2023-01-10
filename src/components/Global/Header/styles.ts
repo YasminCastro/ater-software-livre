@@ -43,7 +43,9 @@ export const BlackDot = styled.div`
   width: 43px;
   height: 43px;
   background: ${colors.black} 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
   border-radius: 50%;
   top: 19px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { colors } from "@/styles/GlobalStyles";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 import {
   HeaderWrapper,
@@ -12,18 +13,16 @@ const Header: React.FC = () => {
     <HeaderBackground>
       <HeaderWrapper>
         <HeaderContainer>
-          <Link href="#" passHref>
-            software
-          </Link>
-          <Link href="#" passHref>
-            educativo
-          </Link>
-          <Link href="#" passHref>
-            outros desdobramentos
-          </Link>
-          <Link href="#" passHref>
-            <BlackDot />
-          </Link>
+          <a href="#">home</a>
+          <a href="#">software</a>
+          <a href="#">educativo</a>
+          <a href="#">outros desdobramentos</a>
+          <a href="#">contato</a>
+          <a href="#">
+            <BlackDot>
+              <AiOutlineInstagram color={colors.white} />
+            </BlackDot>
+          </a>
         </HeaderContainer>
       </HeaderWrapper>
     </HeaderBackground>
