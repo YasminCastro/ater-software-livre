@@ -35,6 +35,12 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/icons/favicon.png" />
           <link rel="icon" href="/icons/favicon.png" />
           <meta property="og:type" content="website" />
+          <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+            rel="stylesheet"
+          ></link>
         </Head>
         <body>
           <Main />

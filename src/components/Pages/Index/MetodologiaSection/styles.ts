@@ -12,9 +12,12 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
 `;
 
-export const ContentBlock = styled.div``;
+export const ContentBlock = styled.div`
+  margin-bottom: 38px;
+`;
 
 export const Square = styled.div`
   /* position: absolute; */
@@ -41,15 +44,24 @@ export const Title = styled.div`
   }
 `;
 
-export const Right = styled.div`
-  border: 1px solid red;
-  width: 100%;
-  max-width: 582px;
-`;
-
 export const Content = styled.div`
   max-width: 1088px;
 
   color: ${colors.white};
   font-size: 24px;
+`;
+
+export const ButtonsBlock = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  a {
+    border: 1px solid ${colors.grey};
+    background: ${colors.white};
+    padding: 28px 112px;
+
+    font-size: 40px;
+    font-weight: bold;
+  }
 `;

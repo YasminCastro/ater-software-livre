@@ -1,8 +1,8 @@
 import {
+  ButtonsBlock,
   Container,
   Content,
   ContentBlock,
-  Right,
   Square,
   Title,
   Wrapper,
@@ -111,8 +111,13 @@ const MetodologiaSection: React.FC = () => {
               compreender o projeto e também como contribuição para futuras
               pesquisas no campo da arte e tecnologia.
             </p>
+            <br />
           </Content>
         </ContentBlock>
+        <ButtonsBlock>
+          <a href="#">acesso à planilha</a>
+          <a href="#">acesso ao código</a>
+        </ButtonsBlock>
       </Container>
     </Wrapper>
   );

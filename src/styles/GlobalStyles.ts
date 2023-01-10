@@ -10,10 +10,12 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
   }
 
   a {
     text-decoration:none;
+    color: ${colors.black};
   }  
 
   li, ul {
