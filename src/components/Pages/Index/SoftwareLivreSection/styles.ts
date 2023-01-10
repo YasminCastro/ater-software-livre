@@ -40,23 +40,39 @@ export const Left = styled.div`
   }
 `;
 
-export const Right = styled.div``;
+export const Right = styled.div`
+  border: 1px solid red;
+  width: 100%;
+  max-width: 582px;
+`;
 
 export const SearchBar = styled.input`
-  width: 582px;
+  width: 100%;
+  max-width: 562px;
+
   height: 52px;
 
-  border: 1px solid #707070;
+  border: 1px solid ${colors.grey};
   margin-bottom: 34px;
 
+  font-size: 20px;
+  padding-left: 20px;
+
   ::placeholder {
-    font-size: 20px;
-    padding-left: 21px;
+    color: ${colors.grey};
   }
 `;
 export const Results = styled.div`
-  width: 582px;
+  width: 100%;
+  max-width: 582px;
+
   height: 386px;
-  border: 1px solid #707070;
+  border: 1px solid ${colors.grey};
   background: ${colors.white};
+
+  p {
+    color: ${colors.grey};
+    padding: 20px;
+    font-size: 20px;
+  }
 `;

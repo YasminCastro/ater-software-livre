@@ -7,8 +7,10 @@ const SoftwareLivreSection: React.FC = () => {
         <h1>software livre</h1>
       </Left>
       <Right>
-        <SearchBar placeholder="campo de busca" />
-        <Results />
+        <SearchBar placeholder="campo de busca" type="text" />
+        <Results>
+          <p>resultados em lista</p>
+        </Results>
       </Right>
     </Container>
   );
