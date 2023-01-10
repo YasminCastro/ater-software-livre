@@ -1,3 +1,4 @@
+import IndicadoresSection from "@/components/Pages/Index/IndicadoresSection";
 import MetodologiaSection from "@/components/Pages/Index/MetodologiaSection";
 import SoftwareLivreSection from "@/components/Pages/Index/SoftwareLivreSection";
 import { PageContainer, PageWrapper } from "@/styles/Page";
@@ -11,6 +12,7 @@ export default function Home() {
           <PageContainer>
             <SoftwareLivreSection />
             <MetodologiaSection />
+            <IndicadoresSection />
           </PageContainer>
         </PageWrapper>
       </Layout>
