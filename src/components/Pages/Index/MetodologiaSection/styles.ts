@@ -20,12 +20,13 @@ export const ContentBlock = styled.div`
 `;
 
 export const Square = styled.div`
-  /* position: absolute; */
+  position: absolute;
   background: ${colors.white} 0% 0% no-repeat padding-box;
   width: 52px;
   height: 47px;
   border: 1px solid ${colors.grey};
-  /* left: 0px; */
+  left: 0px;
+  margin: 50px auto;
 `;
 
 export const Title = styled.div`

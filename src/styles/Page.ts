@@ -1,11 +1,38 @@
 import styled from "styled-components";
-import img from "public/fundo_site_2-03.png";
 
 export const PageWrapper = styled.div`
-  display: flex;
   background-image: url("fundo_site_2-03.png");
+  background-position: top;
+
+  width: 100%;
+  max-width: 100vw;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const PageContainer = styled.div`
   min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const SectionWrapper = styled.div`
+  width: 100%;
+  max-width: 1024px;
+
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
 `;
