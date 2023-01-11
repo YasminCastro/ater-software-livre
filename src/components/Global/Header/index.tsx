@@ -5,7 +5,7 @@ import {
   HeaderWrapper,
   HeaderContainer,
   HeaderBackground,
-  BlackDot,
+  WhiteDot,
 } from "./styles";
 
 const Header: React.FC = () => {
@@ -18,10 +18,10 @@ const Header: React.FC = () => {
           <a href="#">educativo</a>
           <a href="#">outros desdobramentos</a>
           <a href="#">contato</a>
-          <a href="#">
-            <BlackDot>
-              <AiOutlineInstagram color={colors.white} />
-            </BlackDot>
+          <a href="https://www.instagram.com/projetoater" target="_blank">
+            <WhiteDot>
+              <AiOutlineInstagram color={colors.black} />
+            </WhiteDot>
           </a>
         </HeaderContainer>
       </HeaderWrapper>
