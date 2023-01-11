@@ -7,6 +7,8 @@ import {
   Title,
   Wrapper,
 } from "./styles";
+import { IoIosArrowForward } from "react-icons/io";
+import { colors } from "@/styles/GlobalStyles";
 
 const MetodologiaSection: React.FC = () => {
   return (
@@ -115,8 +117,15 @@ const MetodologiaSection: React.FC = () => {
           </Content>
         </ContentBlock>
         <ButtonsBlock>
-          <a href="#">acesso à planilha</a>
-          <a href="#">acesso ao código</a>
+          <a href="#">
+            acesso à planilha
+            <IoIosArrowForward color={colors.white} />
+          </a>
+
+          <a href="#">
+            acesso ao código
+            <IoIosArrowForward color={colors.white} />
+          </a>
         </ButtonsBlock>
       </Container>
     </Wrapper>

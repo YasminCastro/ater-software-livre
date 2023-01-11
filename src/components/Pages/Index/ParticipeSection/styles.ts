@@ -54,16 +54,24 @@ export const Content = styled.div`
 
 export const ButtonsBlock = styled.div`
   a {
-    border: 1px solid ${colors.gray};
-    background: ${colors.white};
-    padding: 20px 50px;
+    color: ${colors.white};
+    border-radius: 24px;
+
+    border: 1px solid ${colors.white};
+    background: transparent;
+    padding: 20px;
 
     font-size: 28px;
     font-weight: bold;
 
     :hover {
-      background: ${colors.gray};
+      background: ${colors.blue};
       transition: 0.5s;
     }
+
+    width: fit-content;
+    display: flex;
+    gap: 40px;
+    align-items: center;
   }
 `;

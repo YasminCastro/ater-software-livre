@@ -1,3 +1,5 @@
+import { colors } from "@/styles/GlobalStyles";
+import { IoIosArrowForward } from "react-icons/io";
 import {
   ButtonsBlock,
   Container,
@@ -21,7 +23,10 @@ const ParticipeSection: React.FC = () => {
           </Title>
           <Content>
             <ButtonsBlock>
-              <a href="#">formulário de inscrição</a>
+              <a href="#">
+                formulário de inscrição{" "}
+                <IoIosArrowForward color={colors.white} />
+              </a>
             </ButtonsBlock>
           </Content>
         </ContentBlock>
