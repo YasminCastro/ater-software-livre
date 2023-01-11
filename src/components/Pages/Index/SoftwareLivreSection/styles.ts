@@ -4,11 +4,10 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
 
-  margin-top: 220px;
+  margin-top: 160px;
 
   display: flex;
-  justify-content: center;
-  gap: 46px;
+  justify-content: space-evenly;
 
   @media (max-width: 950px) {
     flex-direction: column;
@@ -40,7 +39,12 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   width: 100%;
-  max-width: 582px;
+  max-width: 580px;
+
+  border: 1px solid ${colors.white};
+  border-radius: 20px;
+  padding: 16px;
+  background: ${colors.darkerGray};
 `;
 
 export const SearchBar = styled.div`
@@ -52,31 +56,37 @@ export const SearchBar = styled.div`
 
     height: 52px;
 
-    border: 1px solid ${colors.grey};
-    margin-bottom: 34px;
+    border: 1px solid ${colors.gray};
+    margin-bottom: 10px;
 
     font-size: 20px;
     padding-left: 20px;
+    border-radius: 6px;
   }
 
   svg {
     position: absolute;
     right: 0;
     top: 4px;
-    padding: 10px 24px;
+    padding: 10px 20px;
   }
 `;
 export const Results = styled.div`
   width: 100%;
   max-width: 582px;
+  border-radius: 6px;
 
-  height: 386px;
-  border: 1px solid ${colors.grey};
-  background: ${colors.white};
+  height: 300px;
 
-  p {
-    color: ${colors.grey};
-    padding: 20px;
+  margin-left: 10px;
+
+  li {
+    color: ${colors.white};
     font-size: 20px;
+    margin-bottom: 4px;
+
+    :hover {
+      color: ${colors.blue};
+    }
   }
 `;

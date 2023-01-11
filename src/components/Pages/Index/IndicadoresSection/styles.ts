@@ -24,7 +24,7 @@ export const Square = styled.div`
   background: ${colors.white} 0% 0% no-repeat padding-box;
   width: 52px;
   height: 47px;
-  border: 1px solid ${colors.grey};
+  border: 1px solid ${colors.gray};
   left: 0px;
   margin: 50px auto;
 `;
@@ -56,7 +56,7 @@ export const ButtonsBlock = styled.div`
   gap: 16px;
 
   a {
-    border: 1px solid ${colors.grey};
+    border: 1px solid ${colors.gray};
     background: ${colors.white};
     padding: 28px 112px;
 

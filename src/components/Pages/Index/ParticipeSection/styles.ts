@@ -24,7 +24,7 @@ export const Square = styled.div`
   background: ${colors.white} 0% 0% no-repeat padding-box;
   width: 52px;
   height: 47px;
-  border: 1px solid ${colors.grey};
+  border: 1px solid ${colors.gray};
   left: 0px;
   margin: 50px auto;
 `;
@@ -54,7 +54,7 @@ export const Content = styled.div`
 
 export const ButtonsBlock = styled.div`
   a {
-    border: 1px solid ${colors.grey};
+    border: 1px solid ${colors.gray};
     background: ${colors.white};
     padding: 20px 50px;
 
@@ -62,7 +62,7 @@ export const ButtonsBlock = styled.div`
     font-weight: bold;
 
     :hover {
-      background: ${colors.grey};
+      background: ${colors.gray};
       transition: 0.5s;
     }
   }

@@ -16,6 +16,6 @@ export const Container = styled.div`
   }
 
   img {
-    border: 1px solid ${colors.grey};
+    border: 1px solid ${colors.gray};
   }
 `;
