@@ -43,20 +43,27 @@ export const Right = styled.div`
   max-width: 582px;
 `;
 
-export const SearchBar = styled.input`
-  width: 100%;
-  max-width: 562px;
+export const SearchBar = styled.div`
+  position: relative;
 
-  height: 52px;
+  input {
+    width: 100%;
+    max-width: 562px;
 
-  border: 1px solid ${colors.grey};
-  margin-bottom: 34px;
+    height: 52px;
 
-  font-size: 20px;
-  padding-left: 20px;
+    border: 1px solid ${colors.grey};
+    margin-bottom: 34px;
 
-  ::placeholder {
-    color: ${colors.grey};
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    padding: 10px 24px;
   }
 `;
 export const Results = styled.div`
