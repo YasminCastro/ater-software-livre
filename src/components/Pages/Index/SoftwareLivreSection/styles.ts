@@ -1,5 +1,17 @@
 import { colors } from "@/styles/GlobalStyles";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.section`
   width: 100%;
@@ -16,6 +28,8 @@ export const Container = styled.section`
 `;
 
 export const Left = styled.div`
+  animation: ${fadeIn} 1s linear;
+
   h1 {
     font-size: 60px;
     font-weight: 700;
