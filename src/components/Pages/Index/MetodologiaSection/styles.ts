@@ -17,6 +17,16 @@ export const Container = styled.div`
 
 export const ContentBlock = styled.div`
   margin-bottom: 38px;
+
+  a {
+    color: ${colors.white};
+
+    text-decoration: underline;
+
+    :hover {
+      color: #4b8bb4;
+    }
+  }
 `;
 
 export const Square = styled.div`

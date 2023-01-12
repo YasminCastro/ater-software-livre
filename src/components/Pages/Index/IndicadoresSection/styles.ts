@@ -49,18 +49,3 @@ export const Content = styled.div`
   flex-wrap: wrap;
   gap: 16px;
 `;
-
-export const ButtonsBlock = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-
-  a {
-    border: 1px solid ${colors.gray};
-    background: ${colors.white};
-    padding: 28px 112px;
-
-    font-size: 40px;
-    font-weight: bold;
-  }
-`;
