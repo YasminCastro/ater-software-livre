@@ -19,6 +19,7 @@ export const Container = styled.section`
   margin-top: 160px;
 
   display: flex;
+  justify-content: space-evenly;
 
   @media (max-width: 1000px) {
     flex-direction: column;
