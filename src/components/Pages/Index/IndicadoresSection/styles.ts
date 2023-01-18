@@ -17,6 +17,10 @@ export const Container = styled.div`
   @media (max-width: 1372px) {
     margin-right: 48px;
   }
+
+  @media (max-width: 800px) {
+    margin: 56px 72px;
+  }
 `;
 
 export const ContentBlock = styled.div`
@@ -39,12 +43,10 @@ export const Title = styled.div`
   h2 {
     color: ${colors.white};
     font-size: 40px;
-  }
 
-  p {
-    color: ${colors.white};
-    font-size: 32px;
-    font-weight: bold;
+    @media (max-width: 800px) {
+      font-size: 30px;
+    }
   }
 `;
 

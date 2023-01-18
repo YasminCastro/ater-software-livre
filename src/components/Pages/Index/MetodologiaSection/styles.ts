@@ -13,6 +13,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 800px) {
+    margin: 56px 72px;
+  }
 `;
 
 export const ContentBlock = styled.div`
@@ -46,12 +50,10 @@ export const Title = styled.div`
   h2 {
     color: ${colors.white};
     font-size: 40px;
-  }
 
-  p {
-    color: ${colors.white};
-    font-size: 32px;
-    font-weight: bold;
+    @media (max-width: 800px) {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -60,6 +62,10 @@ export const Content = styled.div`
 
   color: ${colors.white};
   font-size: 24px;
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
 `;
 
 export const ButtonsBlock = styled.div`
@@ -85,5 +91,10 @@ export const ButtonsBlock = styled.div`
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @media (max-width: 1000px) {
+      gap: 10px;
+      font-size: 22px;
+    }
   }
 `;

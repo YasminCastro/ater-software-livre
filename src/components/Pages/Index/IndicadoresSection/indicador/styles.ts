@@ -13,13 +13,14 @@ export const Container = styled.div`
     color: ${colors.white};
     margin-bottom: 14px;
     height: 70px;
+
+    @media (max-width: 800px) {
+      font-size: 24px;
+    }
   }
 
   img {
     border: 1px solid ${colors.gray};
     width: 538px;
   }
-  /* 
-  @media (max-width: 1280px) {
-  } */
 `;
