@@ -19,11 +19,11 @@ export const Container = styled.section`
   margin-top: 160px;
 
   display: flex;
-  justify-content: space-evenly;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
-    margin-top: 32px;
+    align-items: center;
+    margin-top: -28px;
   }
 `;
 
@@ -37,22 +37,10 @@ export const Left = styled.div`
     color: ${colors.white};
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1000px) {
     h1 {
-      font-size: 50px;
-    }
-  }
-
-  @media (max-width: 650px) {
-    h1 {
-      font-size: 32px;
-      line-height: 40px;
-    }
-  }
-
-  @media (max-width: 375px) {
-    h1 {
-      font-size: 24px;
+      font-size: 60px;
+      margin-bottom: 18px;
     }
   }
 `;
