@@ -29,11 +29,18 @@ export const Container = styled.section`
 
 export const Left = styled.div`
   animation: ${fadeIn} 1s linear;
+  margin-top: 140px;
 
   h1 {
     font-size: 60px;
     font-weight: 700;
     color: ${colors.white};
+  }
+
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: 50px;
+    }
   }
 
   @media (max-width: 650px) {
@@ -46,7 +53,6 @@ export const Left = styled.div`
   @media (max-width: 375px) {
     h1 {
       font-size: 24px;
-      line-height: 32px;
     }
   }
 `;

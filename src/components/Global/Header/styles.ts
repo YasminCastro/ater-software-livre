@@ -16,8 +16,16 @@ export const HeaderWrapper = styled.header`
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 58px;
 
+  @media (max-width: 820px) {
+    justify-content: flex-end;
+    margin-right: 36px;
+  }
+`;
+
+export const HeaderLeft = styled.div`
   a {
     color: ${colors.white};
     font-weight: 400;
@@ -31,18 +39,48 @@ export const HeaderContainer = styled.div`
     }
 
     :last-child {
-      padding: 0px 58px;
       border-right: none;
     }
 
-    :nth-last-child(2) {
-      border-right: none;
-    }
-
-    :nth-last-child(5) {
+    :nth-last-child(4) {
       background-color: ${colors.mediumGrey};
       color: ${colors.green};
-      transition: 0.5s;
+    }
+
+    @media (max-width: 1088px) {
+      padding: 20px 40px;
+    }
+
+    @media (max-width: 950px) {
+      padding: 20px 30px;
+
+      :last-child {
+        padding: 0px 28px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 820px) {
+    justify-content: flex-end;
+    margin-right: 54px;
+  }
+`;
+
+export const HeaderRight = styled.div`
+  .instagram-icon {
+    @media (max-width: 820px) {
+      display: none;
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+    @media (max-width: 820px) {
+      display: block;
     }
   }
 `;
