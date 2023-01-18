@@ -1,57 +1,48 @@
 import { colors } from "@/styles/GlobalStyles";
 import styled from "styled-components";
 
-export const HeaderBackground = styled.div`
+export const HeaderWrapper = styled.header`
   width: 100%;
   max-width: 100vw;
 
   background-color: ${colors.black};
-  min-height: 75px;
   position: absolute;
   top: 0;
-
-  border-bottom: 2px solid ${colors.white};
-
-  display: flex;
-  justify-content: center;
-`;
-
-export const HeaderWrapper = styled.header`
-  max-height: 75px;
-  padding: 19px 0;
+  border-bottom: 1px solid ${colors.white};
 
   z-index: 100;
 `;
 
 export const HeaderContainer = styled.div`
-  width: 100%;
-  max-width: 100vw;
-  max-height: 75px;
-  z-index: 100;
-
   display: flex;
-  gap: 70px;
   align-items: center;
+  justify-content: center;
 
   a {
     color: ${colors.white};
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    border-right: 1px solid ${colors.white};
+    padding: 20px 58px;
 
     :hover {
-      color: ${colors.blue};
+      color: ${colors.green};
+      transition: 0.5s;
+    }
+
+    :last-child {
+      padding: 0px 58px;
+      border-right: none;
+    }
+
+    :nth-last-child(2) {
+      border-right: none;
+    }
+
+    :nth-last-child(5) {
+      background-color: ${colors.mediumGrey};
+      color: ${colors.green};
       transition: 0.5s;
     }
   }
-`;
-
-export const WhiteDot = styled.div`
-  width: 40px;
-  height: 40px;
-  background: ${colors.white} 0% 0% no-repeat padding-box;
-  border-radius: 50%;
-  top: 19px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;

@@ -16,8 +16,6 @@ const Layout: React.FC<any> = ({ children }): JSX.Element => {
   );
 };
 
-const MainContainer = styled.main`
-  padding-top: 64px;
-`;
+const MainContainer = styled.main``;
 
 export default Layout;

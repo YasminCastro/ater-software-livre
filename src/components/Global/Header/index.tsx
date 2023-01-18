@@ -1,35 +1,26 @@
 import { colors } from "@/styles/GlobalStyles";
 import { AiOutlineInstagram } from "react-icons/ai";
 
-import {
-  HeaderWrapper,
-  HeaderContainer,
-  HeaderBackground,
-  WhiteDot,
-} from "./styles";
+import { HeaderWrapper, HeaderContainer } from "./styles";
 
 const Header: React.FC = () => {
   return (
-    <HeaderBackground>
-      <HeaderWrapper>
-        <HeaderContainer>
-          <a href="#">home</a>
-          <a href="#">software</a>
-          <a href="#">educativo</a>
-          <a href="#">outros desdobramentos</a>
-          <a href="#">contato</a>
-          <a
-            href="https://www.instagram.com/projetoater"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <WhiteDot>
-              <AiOutlineInstagram color={colors.black} />
-            </WhiteDot>
-          </a>
-        </HeaderContainer>
-      </HeaderWrapper>
-    </HeaderBackground>
+    <HeaderWrapper>
+      <HeaderContainer>
+        <a href="#">Início</a>
+        <a href="#">Software</a>
+        <a href="#">Educativo</a>
+        <a href="#">Outros desdobramentos</a>
+        <a href="#">Contato</a>
+        <a
+          href="https://www.instagram.com/projetoater"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiOutlineInstagram color={colors.white} size={32} />
+        </a>
+      </HeaderContainer>
+    </HeaderWrapper>
   );
 };
 
