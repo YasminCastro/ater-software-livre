@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const PageWrapper = styled.div`
   background-image: url("fundo_site_2-03.png");
   background-position: top;
+  background-repeat: repeat;
 
   width: 100%;
   max-width: 100vw;
