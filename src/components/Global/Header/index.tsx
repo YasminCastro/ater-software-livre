@@ -18,7 +18,11 @@ const Header: React.FC = () => {
           <a href="#">educativo</a>
           <a href="#">outros desdobramentos</a>
           <a href="#">contato</a>
-          <a href="https://www.instagram.com/projetoater" target="_blank">
+          <a
+            href="https://www.instagram.com/projetoater"
+            target="_blank"
+            rel="noreferrer"
+          >
             <WhiteDot>
               <AiOutlineInstagram color={colors.black} />
             </WhiteDot>

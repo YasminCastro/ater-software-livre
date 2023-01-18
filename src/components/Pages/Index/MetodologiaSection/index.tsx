@@ -52,13 +52,18 @@ const MetodologiaSection: React.FC = () => {
               produção artística e a presença nas redes sociais de artistas
               brasileiros; a consulta a bases de dados de mapeamentos artísticos
               já existentes, como{" "}
-              <a href="https://projetoafro.com" target="_blank">
+              <a
+                href="https://projetoafro.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 projeto afro
               </a>
               ;{" "}
               <a
                 href="https://www.trabajadoresdearte.org/sitio/mapa-das-artistas-curadoras-e-educadoras-de-arte-racializadas-no-brasil/"
                 target="_blank"
+                rel="noreferrer"
               >
                 mapa de artistas, curadoras e educadoras de arte racializadas no
                 Brasil do coletivo Nacional Trovoa
@@ -67,6 +72,7 @@ const MetodologiaSection: React.FC = () => {
               <a
                 href="https://www.trabajadoresdearte.org/sitio/mapa-das-curadoras-e-curadores-negras-negros-e-indigenas/"
                 target="_blank"
+                rel="noreferrer"
               >
                 {" "}
                 mapa das curadoras e curadores negras, negros e indígenas
@@ -76,6 +82,7 @@ const MetodologiaSection: React.FC = () => {
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdD2oQPx-yUi2PcpaSWELf_LcSbWElYHhhiCLHQfsbsUzhttA/viewform?usp=sf_link"
                 target="_blank"
+                rel="noreferrer"
               >
                 {" "}
                 chamada pública de mapeamento para artistas negros e indígenas
@@ -141,11 +148,16 @@ const MetodologiaSection: React.FC = () => {
               <a
                 href="https://docs.google.com/spreadsheets/d/1vnp8Wf_mI4kMCqwsS16bwBZX43kz2EAPgy9CuYcn190/edit?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 aqui
               </a>
               . O código do software também é público e pode ser acessado{" "}
-              <a href="https://github.com/projetoater/software" target="_blank">
+              <a
+                href="https://github.com/projetoater/software"
+                target="_blank"
+                rel="noreferrer"
+              >
                 aqui
               </a>
               . É para todos que desejam conhecer e compreender o projeto, e
@@ -159,12 +171,17 @@ const MetodologiaSection: React.FC = () => {
           <a
             href="https://docs.google.com/spreadsheets/d/1vnp8Wf_mI4kMCqwsS16bwBZX43kz2EAPgy9CuYcn190/edit?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             acesso à planilha
             <IoIosArrowForward color={colors.white} />
           </a>
 
-          <a href="https://github.com/projetoater/software" target="_blank">
+          <a
+            href="https://github.com/projetoater/software"
+            target="_blank"
+            rel="noreferrer"
+          >
             acesso ao código
             <IoIosArrowForward color={colors.white} />
           </a>
