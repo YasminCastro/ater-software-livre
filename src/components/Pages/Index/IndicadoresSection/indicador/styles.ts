@@ -17,5 +17,24 @@ export const Container = styled.div`
 
   img {
     border: 1px solid ${colors.gray};
+    width: 538px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 100%;
+    max-width: 500px;
+
+    img {
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 1205px) {
+    width: 100%;
+    max-width: 450px;
+
+    img {
+      max-width: 450px;
+    }
   }
 `;

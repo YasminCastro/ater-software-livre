@@ -13,6 +13,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 1372px) {
+    margin-right: 48px;
+  }
 `;
 
 export const ContentBlock = styled.div`

@@ -8,7 +8,7 @@ const Indicador: React.FC<{ title: string; image?: string }> = ({
   return (
     <Container>
       <p>{title}</p>
-      <img src="placeholder.png" width={538} />
+      <img src="placeholder.png" />
     </Container>
   );
 };

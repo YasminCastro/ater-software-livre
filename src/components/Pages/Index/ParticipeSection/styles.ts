@@ -2,17 +2,12 @@ import { colors } from "@/styles/GlobalStyles";
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  display: flex;
+  width: 100%;
 `;
 
 export const Container = styled.div`
-  width: 100%;
-
   margin-top: 48px;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin-left: 140px;
 `;
 
 export const ContentBlock = styled.div`
@@ -46,8 +41,6 @@ export const Title = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 1088px;
-
   color: ${colors.white};
   font-size: 24px;
 `;
