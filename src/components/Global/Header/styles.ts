@@ -71,12 +71,8 @@ export const HeaderLeft = styled.div`
 `;
 
 export const HeaderRight = styled.div`
-  .instagram-icon {
-    @media (max-width: 820px) {
-      display: none;
-    }
-  }
-
+  display: flex;
+  gap: 36px;
   .menu-mobile {
     display: none;
     @media (max-width: 820px) {
