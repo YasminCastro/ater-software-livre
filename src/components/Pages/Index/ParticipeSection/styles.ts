@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
 export const Container = styled.div`
   width: 100%;
 
-  margin: 48px 140px;
+  margin-top: 48px;
 
   display: flex;
   justify-content: center;
