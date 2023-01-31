@@ -12,6 +12,7 @@ const Layout: React.FC<any> = ({ children }): JSX.Element => {
       <VerticalLine />
       <MetodologiaHorizontalLine />
       <ParticipeHorizontalLine />
+      <IndicadoresHorizontalLine />
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
@@ -44,15 +45,14 @@ const MainContainer = styled.main`
 const VerticalLine = styled.div`
   width: 1px;
   background-color: white; /* Line color */
-  height: 2394px; /* Override in-line if you want specific height. */
-  float: left;
+  height: 100%; /* Override in-line if you want specific height. */
   left: 50px;
   position: absolute;
   z-index: 90;
 
-  @media (max-width: 1000px) {
+  /* @media (max-width: 1000px) {
     height: 3000px;
-  }
+  } */
 `;
 
 const MetodologiaHorizontalLine = styled.div`
@@ -69,7 +69,7 @@ const MetodologiaHorizontalLine = styled.div`
   }
 `;
 
-const ParticipeHorizontalLine = styled.div`
+const IndicadoresHorizontalLine = styled.div`
   width: 80px;
   background-color: white; /* Line color */
   height: 1px; /* Override in-line if you want specific height. */
@@ -80,6 +80,20 @@ const ParticipeHorizontalLine = styled.div`
 
   @media (max-width: 1000px) {
     top: 2080px;
+  }
+`;
+
+const ParticipeHorizontalLine = styled.div`
+  width: 80px;
+  background-color: white; /* Line color */
+  height: 1px; /* Override in-line if you want specific height. */
+  float: left;
+  top: 2500px;
+  position: absolute;
+  z-index: 90;
+
+  @media (max-width: 1000px) {
+    top: 2500px;
   }
 `;
 

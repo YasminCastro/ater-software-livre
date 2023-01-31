@@ -2,20 +2,13 @@ import { colors } from "@/styles/GlobalStyles";
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  width: 100%;
+  margin-top: 100px;
 `;
 
 export const Container = styled.div`
-  margin-top: 48px;
-  margin-left: 140px;
-
-  @media (max-width: 1300px) {
-    margin-left: 70px;
-  }
-`;
-
-export const ContentBlock = styled.div`
-  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const Content = styled.div`

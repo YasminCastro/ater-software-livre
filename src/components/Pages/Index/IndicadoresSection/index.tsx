@@ -1,40 +1,48 @@
-import { Title } from "@/components/Global/Geral";
+import { colors } from "@/styles/GlobalStyles";
+import { Title } from "@mantine/core";
 import Indicador from "./indicador";
-import { Container, Content, ContentBlock, Wrapper } from "./styles";
+import { Container, Content, Wrapper } from "./styles";
 
 const ParticipeSection: React.FC = () => {
   return (
     <Wrapper>
       <Container>
-        <ContentBlock>
-          <Title title="INDICADORES" />
-          <Content>
-            <Indicador
-              title="Geográfico (profissionais das artes)"
-              image="indicadores/artistas-geografico.png"
-            />
-            <Indicador
-              title="Categoria informada no Instagram (Ex: artista, arte etc.)"
-              image="indicadores/artistas-geografico.png"
-            />
-            <Indicador
-              title="Quantidade de seguidores (profissionais das artes)"
-              image="indicadores/artistas-quantidade-seguidores.png"
-            />
-            <Indicador
-              title="Perfil verificado (profissionais das artes)"
-              image="indicadores/artistas-quantidade-seguidores.png"
-            />
-            <Indicador
-              title="Geográfico (instituições de arte)"
-              image="indicadores/instituicoes-geografico.png"
-            />
-            <Indicador
-              title="Quantidade de seguidores (instituições de arte)"
-              image="indicadores/instituicoes-quantidade-seguidores.png"
-            />
-          </Content>
-        </ContentBlock>
+        <Title
+          size="h2"
+          style={{
+            fontFamily: "'Lato', sans-serif",
+            color: colors.white,
+            fontSize: 40,
+          }}
+        >
+          INDICADORES
+        </Title>
+        <Content>
+          <Indicador
+            title="Geográfico (profissionais das artes)"
+            image="indicadores/artistas-geografico.png"
+          />
+          <Indicador
+            title="Categoria informada no Instagram (Ex: artista, arte etc.)"
+            image="indicadores/artistas-geografico.png"
+          />
+          <Indicador
+            title="Quantidade de seguidores (profissionais das artes)"
+            image="indicadores/artistas-quantidade-seguidores.png"
+          />
+          <Indicador
+            title="Perfil verificado (profissionais das artes)"
+            image="indicadores/artistas-quantidade-seguidores.png"
+          />
+          <Indicador
+            title="Geográfico (instituições de arte)"
+            image="indicadores/instituicoes-geografico.png"
+          />
+          <Indicador
+            title="Quantidade de seguidores (instituições de arte)"
+            image="indicadores/instituicoes-quantidade-seguidores.png"
+          />
+        </Content>
       </Container>
     </Wrapper>
   );
