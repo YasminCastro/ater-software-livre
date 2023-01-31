@@ -74,7 +74,7 @@ const IndicadoresHorizontalLine = styled.div`
   background-color: white; /* Line color */
   height: 1px; /* Override in-line if you want specific height. */
   float: left;
-  top: 2080px;
+  top: 2085px;
   position: absolute;
   z-index: 90;
 
@@ -88,7 +88,7 @@ const ParticipeHorizontalLine = styled.div`
   background-color: white; /* Line color */
   height: 1px; /* Override in-line if you want specific height. */
   float: left;
-  top: 2500px;
+  top: 3645px;
   position: absolute;
   z-index: 90;
 
