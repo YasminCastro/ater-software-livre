@@ -41,23 +41,39 @@ const MainContainer = styled.main`
 `;
 
 const VerticalLine = styled.div`
-  width: 1px; /* Line width */
+  width: 1px;
   background-color: white; /* Line color */
   height: 2394px; /* Override in-line if you want specific height. */
   float: left;
   left: 100px;
   position: absolute;
   z-index: 90;
+
+  @media (max-width: 1400px) {
+    left: 50px;
+  }
+
+  @media (max-width: 1000px) {
+    left: 30px;
+  }
 `;
 
 const MetodologiaHorizontalLine = styled.div`
-  width: 150px; /* Line width */
+  width: 150px;
   background-color: white; /* Line color */
   height: 1px; /* Override in-line if you want specific height. */
   float: left;
   top: 685px;
   position: absolute;
   z-index: 90;
+
+  @media (max-width: 1400px) {
+    width: 80px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 40px;
+  }
 `;
 
 export default Layout;
