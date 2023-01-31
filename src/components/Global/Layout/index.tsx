@@ -11,6 +11,7 @@ const Layout: React.FC<any> = ({ children }): JSX.Element => {
       <GlobalStyle />
       <VerticalLine />
       <MetodologiaHorizontalLine />
+      <ParticipeHorizontalLine />
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
@@ -65,6 +66,20 @@ const MetodologiaHorizontalLine = styled.div`
 
   @media (max-width: 1000px) {
     top: 720px;
+  }
+`;
+
+const ParticipeHorizontalLine = styled.div`
+  width: 80px;
+  background-color: white; /* Line color */
+  height: 1px; /* Override in-line if you want specific height. */
+  float: left;
+  top: 2080px;
+  position: absolute;
+  z-index: 90;
+
+  @media (max-width: 1000px) {
+    top: 2080px;
   }
 `;
 

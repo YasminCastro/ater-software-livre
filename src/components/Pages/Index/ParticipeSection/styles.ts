@@ -1,48 +1,67 @@
 import { colors } from "@/styles/GlobalStyles";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to{
+    transform: translateX(14px);
+    opacity: 1;
+  }
+`;
 
 export const Wrapper = styled.section`
+  margin-top: 100px;
   width: 100%;
 `;
 
 export const Container = styled.div`
-  margin-top: 48px;
-  margin-left: 140px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-  @media (max-width: 1300px) {
-    margin-left: 70px;
-  }
-`;
-
-export const ContentBlock = styled.div`
-  margin-bottom: 38px;
-`;
-
-export const Content = styled.div`
-  color: ${colors.white};
-  font-size: 24px;
+  align-items: flex-start;
 `;
 
 export const ButtonsBlock = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 28px;
+
   a {
     color: ${colors.white};
-    border-radius: 24px;
+    border-radius: 36px;
 
     border: 1px solid ${colors.white};
     background: transparent;
-    padding: 20px;
 
-    font-size: 28px;
+    padding: 20px 100px;
+
+    font-size: 24px;
     font-weight: bold;
 
     :hover {
       background: ${colors.blue};
       transition: 0.5s;
+
+      svg {
+        animation: ${fadeIn} 1s forwards;
+      }
     }
 
-    width: fit-content;
     display: flex;
-    gap: 40px;
     align-items: center;
+    gap: 40px;
+
+    @media (max-width: 1300px) {
+      padding: 20px 60px;
+    }
+
+    @media (max-width: 1100px) {
+      padding: 20px 40px;
+    }
   }
 `;

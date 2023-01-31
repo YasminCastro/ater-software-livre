@@ -13,8 +13,8 @@ export default function Home() {
           <PageContainer>
             <SoftwareLivreSection />
             <MetodologiaSection />
-            {/* <IndicadoresSection />
-            <ParticipeSection /> */}
+            {/* <IndicadoresSection /> */}
+            <ParticipeSection />
           </PageContainer>
         </PageWrapper>
       </Layout>

@@ -8,7 +8,7 @@ const MetodologiaSection: React.FC = () => {
     <Wrapper>
       <Container>
         <Title
-          size="h1"
+          size="h2"
           style={{
             fontFamily: "'Lato', sans-serif",
             color: colors.white,

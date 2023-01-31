@@ -1,7 +1,7 @@
 import { colors } from "@/styles/GlobalStyles";
 import styled, { keyframes } from "styled-components";
 
-export const fadeIn = keyframes`
+const fadeIn = keyframes`
   from{
     transform: translateX(0);
     opacity: 1;

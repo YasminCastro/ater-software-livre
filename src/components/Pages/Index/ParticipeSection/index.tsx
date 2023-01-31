@@ -1,30 +1,27 @@
-import { Title } from "@/components/Global/Geral";
 import { colors } from "@/styles/GlobalStyles";
+import { Title } from "@mantine/core";
 import { IoIosArrowForward } from "react-icons/io";
-import {
-  ButtonsBlock,
-  Container,
-  Content,
-  ContentBlock,
-  Wrapper,
-} from "./styles";
+import { ButtonsBlock, Container, Wrapper } from "./styles";
 
 const ParticipeSection: React.FC = () => {
   return (
     <Wrapper>
       <Container>
-        <ContentBlock>
-          <Title title="PARTICIPE" />
-
-          <Content>
-            <ButtonsBlock>
-              <a href="#">
-                formulário de inscrição{" "}
-                <IoIosArrowForward color={colors.white} />
-              </a>
-            </ButtonsBlock>
-          </Content>
-        </ContentBlock>
+        <Title
+          size="h2"
+          style={{
+            fontFamily: "'Lato', sans-serif",
+            color: colors.white,
+            fontSize: 40,
+          }}
+        >
+          PARTICIPE
+        </Title>
+        <ButtonsBlock>
+          <a href="#">
+            formulário de inscrição <IoIosArrowForward color={colors.white} />
+          </a>
+        </ButtonsBlock>
       </Container>
     </Wrapper>
   );
