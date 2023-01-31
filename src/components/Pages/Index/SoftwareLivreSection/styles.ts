@@ -1,7 +1,7 @@
 import { colors } from "@/styles/GlobalStyles";
 import styled, { keyframes } from "styled-components";
 
-const fadeIn = keyframes`
+export const fadeIn = keyframes`
   from{
     transform: translateY(100px);
     opacity: 0;
@@ -40,57 +40,31 @@ export const Container = styled.section`
   }
 `;
 
-export const Left = styled.div`
+export const Animation = styled.div`
   animation: ${fadeIn} 1s linear;
-  margin-top: 140px;
-
   h1 {
     font-size: 60px;
-    font-weight: 700;
+    margin-top: 140px;
+    font-family: "'Lato', sans-serif";
     color: ${colors.white};
   }
 
   @media (max-width: 1000px) {
-    h1 {
-      margin-bottom: 18px;
-    }
-
     animation: ${fadeInLeft} 1s linear;
+    margin-bottom: 6px;
   }
 
-  @media (max-width: 690px) {
+  @media (max-width: 500px) {
     h1 {
       font-size: 50px;
     }
   }
 `;
 
-export const Right = styled.div`
+export const ResultsList = styled.ul`
   width: 100%;
-  max-width: 580px;
 
-  border: 1px solid ${colors.white};
-  border-radius: 20px;
-  padding: 16px;
-  background: ${colors.darkerGray};
-
-  @media (max-width: 1100px) {
-    max-width: 500px;
-  }
-
-  @media (max-width: 690px) {
-    max-width: 400px;
-  }
-`;
-
-export const Results = styled.div`
-  width: 100%;
-  max-width: 582px;
-  border-radius: 6px;
-
-  height: 300px;
-
-  margin-left: 10px;
+  margin-top: 16px;
 
   li {
     color: ${colors.white};

@@ -1,9 +1,14 @@
-import { Container, Left, Results, Right } from "./styles";
+import { Container, Animation, ResultsList } from "./styles";
 import { AiOutlineSearch } from "react-icons/ai";
 import { ChangeEvent, useState } from "react";
-import { Input, Tooltip } from "@mantine/core";
+import { Card, Input } from "@mantine/core";
+import { colors } from "@/styles/GlobalStyles";
+import { Title } from "@mantine/core";
+import { useMobile } from "@/Providers/MobileHeader";
 
 const SoftwareLivreSection: React.FC = () => {
+  const { isMobile } = useMobile();
+  console.log(isMobile);
   const [filteredSearch, setFilteredSearch] = useState<string[]>([]);
   const strings = [
     "abelha ",
@@ -24,10 +29,28 @@ const SoftwareLivreSection: React.FC = () => {
 
   return (
     <Container>
-      <Left>
-        <h1>software livre</h1>
-      </Left>
-      <Right>
+      <Animation>
+        <Title
+          size="h1"
+          style={{
+            fontFamily: "'Lato', sans-serif",
+          }}
+        >
+          software livre
+        </Title>
+      </Animation>
+
+      <Card
+        style={{
+          background: colors.darkerGray,
+          border: `1px solid ${colors.white}`,
+          borderRadius: 20,
+          width: "100%",
+          maxWidth: 580,
+          height: 400,
+          fontFamily: "'Lato', sans-serif",
+        }}
+      >
         <Input
           radius="md"
           size="lg"
@@ -35,14 +58,13 @@ const SoftwareLivreSection: React.FC = () => {
           rightSection={<AiOutlineSearch size={26} />}
           onChange={handleChange}
         />
-        <Results>
-          <ul>
-            {filteredSearch.map((word) => {
-              return <li key={word}>{word}</li>;
-            })}
-          </ul>
-        </Results>
-      </Right>
+
+        <ResultsList>
+          {filteredSearch.map((word) => {
+            return <li key={word}>{word}</li>;
+          })}
+        </ResultsList>
+      </Card>
     </Container>
   );
 };
