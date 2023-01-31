@@ -22,6 +22,14 @@ export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
+
+  @media (max-width: 1100px) {
+    max-width: 700px;
+  }
 `;
 
 export const SectionWrapper = styled.div`

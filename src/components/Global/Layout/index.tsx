@@ -45,21 +45,17 @@ const VerticalLine = styled.div`
   background-color: white; /* Line color */
   height: 2394px; /* Override in-line if you want specific height. */
   float: left;
-  left: 100px;
+  left: 50px;
   position: absolute;
   z-index: 90;
 
-  @media (max-width: 1400px) {
-    left: 50px;
-  }
-
   @media (max-width: 1000px) {
-    left: 30px;
+    height: 3000px;
   }
 `;
 
 const MetodologiaHorizontalLine = styled.div`
-  width: 150px;
+  width: 80px;
   background-color: white; /* Line color */
   height: 1px; /* Override in-line if you want specific height. */
   float: left;
@@ -67,12 +63,8 @@ const MetodologiaHorizontalLine = styled.div`
   position: absolute;
   z-index: 90;
 
-  @media (max-width: 1400px) {
-    width: 80px;
-  }
-
   @media (max-width: 1000px) {
-    width: 40px;
+    top: 720px;
   }
 `;
 

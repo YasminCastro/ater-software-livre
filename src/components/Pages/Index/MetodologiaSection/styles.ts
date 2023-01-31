@@ -72,5 +72,13 @@ export const ButtonsBlock = styled.div`
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @media (max-width: 1300px) {
+      padding: 20px 60px;
+    }
+
+    @media (max-width: 1100px) {
+      padding: 20px 40px;
+    }
   }
 `;

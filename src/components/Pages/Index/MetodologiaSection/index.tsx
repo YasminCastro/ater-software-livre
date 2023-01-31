@@ -1,7 +1,7 @@
 import { ButtonsBlock, Container, Content, Wrapper } from "./styles";
 import { IoIosArrowForward } from "react-icons/io";
 import { colors } from "@/styles/GlobalStyles";
-import { Anchor, Button, Title } from "@mantine/core";
+import { Title } from "@mantine/core";
 
 const MetodologiaSection: React.FC = () => {
   return (
