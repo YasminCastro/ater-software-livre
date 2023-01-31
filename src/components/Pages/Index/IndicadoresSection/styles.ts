@@ -2,24 +2,15 @@ import { colors } from "@/styles/GlobalStyles";
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  display: flex;
+  width: 100%;
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  margin-top: 48px;
+  margin-left: 140px;
 
-  margin: 48px 140px;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  @media (max-width: 1372px) {
-    margin-right: 48px;
-  }
-
-  @media (max-width: 800px) {
-    margin: 56px 72px;
+  @media (max-width: 1300px) {
+    margin-left: 70px;
   }
 `;
 
@@ -38,20 +29,31 @@ export const Square = styled.div`
 `;
 
 export const Title = styled.div`
+  margin-bottom: 50px;
   display: flex;
 
   h2 {
     color: ${colors.white};
     font-size: 40px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       font-size: 30px;
     }
+  }
+
+  @media (max-width: 1300px) {
+    margin-bottom: 20px;
   }
 `;
 
 export const Content = styled.div`
+  color: ${colors.white};
+  font-size: 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+
+  @media (max-width: 1230px) {
+    gap: 16px;
+  }
 `;

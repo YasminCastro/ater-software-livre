@@ -13,6 +13,18 @@ const fadeIn = keyframes`
   }
 `;
 
+const fadeInLeft = keyframes`
+  from{
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
 export const Container = styled.section`
   width: 100%;
 
@@ -40,8 +52,15 @@ export const Left = styled.div`
 
   @media (max-width: 1000px) {
     h1 {
-      font-size: 60px;
       margin-bottom: 18px;
+    }
+
+    animation: ${fadeInLeft} 1s linear;
+  }
+
+  @media (max-width: 690px) {
+    h1 {
+      font-size: 50px;
     }
   }
 `;
@@ -54,6 +73,14 @@ export const Right = styled.div`
   border-radius: 20px;
   padding: 16px;
   background: ${colors.darkerGray};
+
+  @media (max-width: 1100px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 690px) {
+    max-width: 400px;
+  }
 `;
 
 export const SearchBar = styled.div`
@@ -71,6 +98,14 @@ export const SearchBar = styled.div`
     font-size: 20px;
     padding-left: 20px;
     border-radius: 6px;
+
+    @media (max-width: 1100px) {
+      max-width: 476px;
+    }
+
+    @media (max-width: 690px) {
+      max-width: 380px;
+    }
   }
 
   svg {

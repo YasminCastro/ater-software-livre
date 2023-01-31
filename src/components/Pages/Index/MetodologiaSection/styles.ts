@@ -14,8 +14,8 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  @media (max-width: 800px) {
-    margin: 56px 72px;
+  @media (max-width: 1300px) {
+    margin-left: 70px;
   }
 `;
 
@@ -51,9 +51,13 @@ export const Title = styled.div`
     color: ${colors.white};
     font-size: 40px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       font-size: 30px;
     }
+  }
+
+  @media (max-width: 1300px) {
+    margin-bottom: 40px;
   }
 `;
 
@@ -63,7 +67,7 @@ export const Content = styled.div`
   color: ${colors.white};
   font-size: 24px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     font-size: 20px;
   }
 `;

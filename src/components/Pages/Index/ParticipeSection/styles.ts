@@ -8,6 +8,10 @@ export const Wrapper = styled.section`
 export const Container = styled.div`
   margin-top: 48px;
   margin-left: 140px;
+
+  @media (max-width: 1300px) {
+    margin-left: 70px;
+  }
 `;
 
 export const ContentBlock = styled.div`
@@ -31,12 +35,14 @@ export const Title = styled.div`
   h2 {
     color: ${colors.white};
     font-size: 40px;
+
+    @media (max-width: 900px) {
+      font-size: 30px;
+    }
   }
 
-  p {
-    color: ${colors.white};
-    font-size: 32px;
-    font-weight: bold;
+  @media (max-width: 1300px) {
+    margin-bottom: 40px;
   }
 `;
 

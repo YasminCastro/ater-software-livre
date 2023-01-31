@@ -8,7 +8,7 @@ import {
   Wrapper,
 } from "./styles";
 
-const IndicadoresSection: React.FC = () => {
+const ParticipeSection: React.FC = () => {
   return (
     <Wrapper>
       <Square />
@@ -24,12 +24,18 @@ const IndicadoresSection: React.FC = () => {
               title="Geográfico (profissionais das artes)"
               image="indicadores/artistas-geografico.png"
             />
-            <Indicador title="Categoria informada no Instagram (Ex: artista, arte etc.)" />
+            <Indicador
+              title="Categoria informada no Instagram (Ex: artista, arte etc.)"
+              image="indicadores/artistas-geografico.png"
+            />
             <Indicador
               title="Quantidade de seguidores (profissionais das artes)"
               image="indicadores/artistas-quantidade-seguidores.png"
             />
-            <Indicador title="Perfil verificado (profissionais das artes)" />
+            <Indicador
+              title="Perfil verificado (profissionais das artes)"
+              image="indicadores/artistas-quantidade-seguidores.png"
+            />
             <Indicador
               title="Geográfico (instituições de arte)"
               image="indicadores/instituicoes-geografico.png"
@@ -45,4 +51,4 @@ const IndicadoresSection: React.FC = () => {
   );
 };
 
-export default IndicadoresSection;
+export default ParticipeSection;
