@@ -36,7 +36,7 @@ const SoftwareLivreSection: React.FC = () => {
             fontFamily: "'Lato', sans-serif",
           }}
         >
-          software livre
+          Software
         </Title>
       </Animation>
 

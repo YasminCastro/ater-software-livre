@@ -1,43 +1,42 @@
 import { colors } from "@/styles/GlobalStyles";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-export const Wrapper = styled.section`
-  display: flex;
-`;
+export const fadeIn = keyframes`
+  from{
+    transform: translateX(0);
+    opacity: 1;
+  }
 
-export const Container = styled.div`
-  width: 100%;
-
-  margin: 48px 140px;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  @media (max-width: 1300px) {
-    margin-left: 70px;
+  to{
+    transform: translateX(14px);
+    opacity: 1;
   }
 `;
 
-export const ContentBlock = styled.div`
-  margin-bottom: 38px;
+export const Wrapper = styled.section`
+  margin-top: 100px;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const Content = styled.div`
+  color: ${colors.white};
+  font-size: 20px;
+  margin-top: 32px;
+  text-align: justify;
 
   a {
     color: ${colors.white};
-
     text-decoration: underline;
 
     :hover {
       color: #4b8bb4;
     }
   }
-`;
-
-export const Content = styled.div`
-  max-width: 1088px;
-
-  color: ${colors.white};
-  font-size: 24px;
 
   @media (max-width: 900px) {
     font-size: 20px;
@@ -47,30 +46,31 @@ export const Content = styled.div`
 export const ButtonsBlock = styled.div`
   display: flex;
   justify-content: space-around;
+  margin-top: 16px;
 
   a {
     color: ${colors.white};
-    border-radius: 24px;
+    border-radius: 36px;
 
     border: 1px solid ${colors.white};
     background: transparent;
-    padding: 20px;
 
-    font-size: 28px;
+    padding: 20px 100px;
+
+    font-size: 24px;
     font-weight: bold;
 
     :hover {
       background: ${colors.blue};
       transition: 0.5s;
+
+      svg {
+        animation: ${fadeIn} 1s forwards;
+      }
     }
 
     display: flex;
     align-items: center;
     gap: 40px;
-
-    @media (max-width: 1000px) {
-      gap: 10px;
-      font-size: 22px;
-    }
   }
 `;

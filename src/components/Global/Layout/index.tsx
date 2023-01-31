@@ -10,6 +10,7 @@ const Layout: React.FC<any> = ({ children }): JSX.Element => {
     <>
       <GlobalStyle />
       <VerticalLine />
+      <MetodologiaHorizontalLine />
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
@@ -44,7 +45,17 @@ const VerticalLine = styled.div`
   background-color: white; /* Line color */
   height: 2394px; /* Override in-line if you want specific height. */
   float: left;
-  left: 150px;
+  left: 100px;
+  position: absolute;
+  z-index: 90;
+`;
+
+const MetodologiaHorizontalLine = styled.div`
+  width: 150px; /* Line width */
+  background-color: white; /* Line color */
+  height: 1px; /* Override in-line if you want specific height. */
+  float: left;
+  top: 685px;
   position: absolute;
   z-index: 90;
 `;

@@ -15,7 +15,7 @@ export const PageWrapper = styled.div`
 export const PageContainer = styled.div`
   min-height: 100vh;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1100px;
 
   height: fit-content;
 
