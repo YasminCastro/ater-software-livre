@@ -1,12 +1,7 @@
+import { Title } from "@/components/Global/Geral";
+import { Square } from "@/components/Global/Geral/styles";
 import Indicador from "./indicador";
-import {
-  Container,
-  Content,
-  ContentBlock,
-  Square,
-  Title,
-  Wrapper,
-} from "./styles";
+import { Container, Content, ContentBlock, Wrapper } from "./styles";
 
 const ParticipeSection: React.FC = () => {
   return (
@@ -14,11 +9,7 @@ const ParticipeSection: React.FC = () => {
       <Square />
       <Container>
         <ContentBlock>
-          <Title>
-            <div>
-              <h2>INDICADORES</h2>
-            </div>
-          </Title>
+          <Title title="INDICADORES" />
           <Content>
             <Indicador
               title="Geográfico (profissionais das artes)"

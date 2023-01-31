@@ -1,3 +1,5 @@
+import { Title } from "@/components/Global/Geral";
+import { Square } from "@/components/Global/Geral/styles";
 import { colors } from "@/styles/GlobalStyles";
 import { IoIosArrowForward } from "react-icons/io";
 import {
@@ -5,8 +7,6 @@ import {
   Container,
   Content,
   ContentBlock,
-  Square,
-  Title,
   Wrapper,
 } from "./styles";
 
@@ -16,11 +16,8 @@ const ParticipeSection: React.FC = () => {
       <Square />
       <Container>
         <ContentBlock>
-          <Title>
-            <div>
-              <h2>PARTICIPE</h2>
-            </div>
-          </Title>
+          <Title title="PARTICIPE" />
+
           <Content>
             <ButtonsBlock>
               <a href="#">

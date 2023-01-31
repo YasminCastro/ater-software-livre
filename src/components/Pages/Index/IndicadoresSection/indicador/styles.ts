@@ -17,7 +17,8 @@ export const Container = styled.div`
 
   img {
     border: 1px solid ${colors.gray};
-    width: 540px;
+    width: max-content;
+    max-width: 540px;
   }
 
   @media (max-width: 1230px) {
@@ -30,7 +31,20 @@ export const Container = styled.div`
     }
 
     img {
-      width: 500px;
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    max-width: 540px;
+
+    p {
+      font-size: 28px;
+    }
+
+    img {
+      margin-top: 14px;
+      max-width: 540px;
     }
   }
 `;

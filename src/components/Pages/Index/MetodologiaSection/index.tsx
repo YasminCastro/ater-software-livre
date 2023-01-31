@@ -3,12 +3,12 @@ import {
   Container,
   Content,
   ContentBlock,
-  Square,
-  Title,
   Wrapper,
 } from "./styles";
 import { IoIosArrowForward } from "react-icons/io";
 import { colors } from "@/styles/GlobalStyles";
+import { Title } from "@/components/Global/Geral";
+import { Square } from "@/components/Global/Geral/styles";
 
 const MetodologiaSection: React.FC = () => {
   return (
@@ -16,11 +16,7 @@ const MetodologiaSection: React.FC = () => {
       <Square />
       <Container>
         <ContentBlock>
-          <Title>
-            <div>
-              <h2>METODOLOGIA</h2>
-            </div>
-          </Title>
+          <Title title="METODOLOGIA" />
           <Content>
             <p>
               A base de dados do projeto {"<ATER>"} é composta por um mapeamento
