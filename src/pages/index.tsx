@@ -12,8 +12,8 @@ export default function Home() {
         <PageWrapper>
           <PageContainer>
             <SoftwareLivreSection />
-            {/* <MetodologiaSection />
-            <IndicadoresSection />
+            <MetodologiaSection />
+            {/* <IndicadoresSection />
             <ParticipeSection /> */}
           </PageContainer>
         </PageWrapper>

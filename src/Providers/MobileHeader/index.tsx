@@ -13,7 +13,7 @@ export const useResponsive = (): IValue => useContext(HeaderMobileContext);
 const ResponsiveProvider: React.FC<any> = ({ children }) => {
   const [isTabletSize, setTabletSize] = useState(false);
   const [isMobileSize, setMobileSize] = useState(false);
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [windowSize, setWindowSize] = useState(0);
 
   const value = useMemo(() => {
     return {
@@ -33,6 +33,10 @@ const ResponsiveProvider: React.FC<any> = ({ children }) => {
         setWindowSize(window.innerWidth);
       });
     }
+  }, []);
+
+  useEffect(() => {
+    setWindowSize(window.innerWidth);
   }, []);
 
   useEffect(() => {

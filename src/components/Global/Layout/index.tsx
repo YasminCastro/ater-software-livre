@@ -9,6 +9,7 @@ const Layout: React.FC<any> = ({ children }): JSX.Element => {
   return (
     <>
       <GlobalStyle />
+      <VerticalLine />
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
@@ -36,6 +37,16 @@ const MainContainer = styled.main`
     #040b10,
     #000000
   );
+`;
+
+const VerticalLine = styled.div`
+  width: 1px; /* Line width */
+  background-color: white; /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: left;
+  left: 150px;
+  position: absolute;
+  z-index: 90;
 `;
 
 export default Layout;
