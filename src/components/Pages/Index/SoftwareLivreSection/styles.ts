@@ -83,38 +83,6 @@ export const Right = styled.div`
   }
 `;
 
-export const SearchBar = styled.div`
-  position: relative;
-
-  input {
-    width: 100%;
-    max-width: 562px;
-
-    height: 52px;
-
-    border: 1px solid ${colors.gray};
-    margin-bottom: 10px;
-
-    font-size: 20px;
-    padding-left: 20px;
-    border-radius: 6px;
-
-    @media (max-width: 1100px) {
-      max-width: 476px;
-    }
-
-    @media (max-width: 690px) {
-      max-width: 380px;
-    }
-  }
-
-  svg {
-    position: absolute;
-    right: 0;
-    top: 4px;
-    padding: 10px 20px;
-  }
-`;
 export const Results = styled.div`
   width: 100%;
   max-width: 582px;

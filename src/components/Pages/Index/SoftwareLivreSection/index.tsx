@@ -1,6 +1,7 @@
-import { Container, Left, Results, Right, SearchBar } from "./styles";
+import { Container, Left, Results, Right } from "./styles";
 import { AiOutlineSearch } from "react-icons/ai";
 import { ChangeEvent, useState } from "react";
+import { Input, Tooltip } from "@mantine/core";
 
 const SoftwareLivreSection: React.FC = () => {
   const [filteredSearch, setFilteredSearch] = useState<string[]>([]);
@@ -27,10 +28,13 @@ const SoftwareLivreSection: React.FC = () => {
         <h1>software livre</h1>
       </Left>
       <Right>
-        <SearchBar>
-          <input onChange={handleChange} placeholder="buscar..." type="text" />
-          <AiOutlineSearch size={26} />
-        </SearchBar>
+        <Input
+          radius="md"
+          size="lg"
+          placeholder="Buscar..."
+          rightSection={<AiOutlineSearch size={26} />}
+          onChange={handleChange}
+        />
         <Results>
           <ul>
             {filteredSearch.map((word) => {
