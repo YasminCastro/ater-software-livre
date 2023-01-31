@@ -8,12 +8,10 @@ import {
 import { IoIosArrowForward } from "react-icons/io";
 import { colors } from "@/styles/GlobalStyles";
 import { Title } from "@/components/Global/Geral";
-import { Square } from "@/components/Global/Geral/styles";
 
 const MetodologiaSection: React.FC = () => {
   return (
     <Wrapper>
-      <Square />
       <Container>
         <ContentBlock>
           <Title title="METODOLOGIA" />

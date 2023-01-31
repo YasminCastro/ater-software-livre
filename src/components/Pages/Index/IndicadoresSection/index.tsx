@@ -1,12 +1,10 @@
 import { Title } from "@/components/Global/Geral";
-import { Square } from "@/components/Global/Geral/styles";
 import Indicador from "./indicador";
 import { Container, Content, ContentBlock, Wrapper } from "./styles";
 
 const ParticipeSection: React.FC = () => {
   return (
     <Wrapper>
-      <Square />
       <Container>
         <ContentBlock>
           <Title title="INDICADORES" />
