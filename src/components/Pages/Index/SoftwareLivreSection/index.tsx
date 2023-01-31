@@ -7,7 +7,7 @@ import { Title } from "@mantine/core";
 import { useResponsive } from "@/Providers/MobileHeader";
 
 const SoftwareLivreSection: React.FC = () => {
-  const { isTabletSize } = useResponsive();
+  const { isMobileSize } = useResponsive();
 
   const [filteredSearch, setFilteredSearch] = useState<string[]>([]);
   const strings = [
@@ -43,11 +43,11 @@ const SoftwareLivreSection: React.FC = () => {
       <Card
         style={{
           background: colors.darkerGray,
-          border: `1px solid ${colors.white}`,
-          borderRadius: 20,
+          border: isMobileSize ? "" : `1px solid ${colors.white}`,
+          borderRadius: isMobileSize ? 10 : 20,
           width: "100%",
           maxWidth: 580,
-          height: 400,
+          height: isMobileSize ? 300 : 400,
           fontFamily: "'Lato', sans-serif",
         }}
       >
