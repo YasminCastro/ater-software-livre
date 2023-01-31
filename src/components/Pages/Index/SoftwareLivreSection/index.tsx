@@ -4,11 +4,11 @@ import { ChangeEvent, useState } from "react";
 import { Card, Input } from "@mantine/core";
 import { colors } from "@/styles/GlobalStyles";
 import { Title } from "@mantine/core";
-import { useMobile } from "@/Providers/MobileHeader";
+import { useResponsive } from "@/Providers/MobileHeader";
 
 const SoftwareLivreSection: React.FC = () => {
-  const { isMobile } = useMobile();
-  console.log(isMobile);
+  const { isTabletSize } = useResponsive();
+
   const [filteredSearch, setFilteredSearch] = useState<string[]>([]);
   const strings = [
     "abelha ",

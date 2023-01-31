@@ -1,24 +1,27 @@
 import { useState, createContext, useMemo, useContext, useEffect } from "react";
 
 interface IValue {
-  isMobile: boolean;
+  isTabletSize: boolean;
+  isMobileSize: boolean;
   windowSize: number;
 }
 
 const HeaderMobileContext = createContext({} as IValue);
 
-export const useMobile = (): IValue => useContext(HeaderMobileContext);
+export const useResponsive = (): IValue => useContext(HeaderMobileContext);
 
-const MobileProvider: React.FC<any> = ({ children }) => {
-  const [isMobile, setMobile] = useState(false);
-  const [windowSize, setWindowSize] = useState(0);
+const ResponsiveProvider: React.FC<any> = ({ children }) => {
+  const [isTabletSize, setTabletSize] = useState(false);
+  const [isMobileSize, setMobileSize] = useState(false);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   const value = useMemo(() => {
     return {
       windowSize,
-      isMobile,
+      isTabletSize,
+      isMobileSize,
     };
-  }, [windowSize, isMobile]);
+  }, [windowSize, isTabletSize, isMobileSize]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -33,10 +36,13 @@ const MobileProvider: React.FC<any> = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    if (windowSize < 920) {
-      setMobile(true);
+    if (windowSize < 550) {
+      setMobileSize(true);
+    } else if (windowSize < 920) {
+      setTabletSize(true);
     } else {
-      setMobile(false);
+      setTabletSize(false);
+      setMobileSize(false);
     }
   }, [windowSize]);
 
@@ -47,4 +53,4 @@ const MobileProvider: React.FC<any> = ({ children }) => {
   );
 };
 
-export default MobileProvider;
+export default ResponsiveProvider;

@@ -10,24 +10,23 @@ import {
   HeaderLeft,
 } from "./styles";
 import { useState } from "react";
-import { useMobile } from "@/Providers/MobileHeader";
+import { useResponsive } from "@/Providers/MobileHeader";
 
 const Header: React.FC = () => {
   const [opened, setOpened] = useState(false);
-  const { isMobile } = useMobile();
-  console.log(isMobile);
+  const { isTabletSize } = useResponsive();
 
   return (
     <HeaderWrapper>
-      <HeaderContainer isMobile={isMobile}>
-        <HeaderLeft isMobile={isMobile}>
+      <HeaderContainer isMobile={isTabletSize}>
+        <HeaderLeft isMobile={isTabletSize}>
           <a href="#">Início</a>
           <a href="#">Software</a>
           <a href="#">Educativo</a>
           <a href="#">Outros desdobramentos</a>
           <a href="#">Contato</a>
         </HeaderLeft>
-        <HeaderRight isMobile={isMobile}>
+        <HeaderRight isMobile={isTabletSize}>
           <a
             className="instagram-icon"
             href="https://www.instagram.com/projetoater"
