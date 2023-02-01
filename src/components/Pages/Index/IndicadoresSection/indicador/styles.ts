@@ -21,17 +21,17 @@ export const Container = styled.div`
     max-width: 540px;
   }
 
-  @media (max-width: 1230px) {
-    max-width: 500px;
+  @media (max-width: 1300px) {
+    max-width: 442px;
 
     p {
-      max-width: 500px;
-      font-size: 22px;
-      height: 50px;
+      max-width: 442px;
+      font-size: 18px;
+      height: auto;
     }
 
     img {
-      max-width: 500px;
+      max-width: 442px;
     }
   }
 

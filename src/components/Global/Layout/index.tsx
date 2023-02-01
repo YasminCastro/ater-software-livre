@@ -50,9 +50,9 @@ const VerticalLine = styled.div`
   position: absolute;
   z-index: 90;
 
-  /* @media (max-width: 1000px) {
-    height: 3000px;
-  } */
+  @media (max-width: 1300px) {
+    height: 3703px;
+  }
 `;
 
 const MetodologiaHorizontalLine = styled.div`
@@ -78,8 +78,8 @@ const IndicadoresHorizontalLine = styled.div`
   position: absolute;
   z-index: 90;
 
-  @media (max-width: 1000px) {
-    top: 2080px;
+  @media (max-width: 1300px) {
+    top: 2230px;
   }
 `;
 
@@ -92,8 +92,8 @@ const ParticipeHorizontalLine = styled.div`
   position: absolute;
   z-index: 90;
 
-  @media (max-width: 1000px) {
-    top: 2500px;
+  @media (max-width: 1300px) {
+    top: 3480px;
   }
 `;
 
