@@ -11,8 +11,6 @@ const MetodologiaSection: React.FC = () => {
           size="h2"
           style={{
             fontFamily: "'Lato', sans-serif",
-            color: colors.white,
-            fontSize: 40,
           }}
         >
           METODOLOGIA

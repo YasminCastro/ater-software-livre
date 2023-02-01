@@ -26,6 +26,17 @@ export const Container = styled.div`
   align-items: flex-start;
 
   margin-bottom: 96px;
+
+  h1 {
+    color: ${colors.white};
+    font-size: 40px;
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
 `;
 
 export const ButtonsBlock = styled.div`
@@ -64,6 +75,10 @@ export const ButtonsBlock = styled.div`
 
     @media (max-width: 1100px) {
       padding: 16px 30px;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 18px;
     }
   }
 `;

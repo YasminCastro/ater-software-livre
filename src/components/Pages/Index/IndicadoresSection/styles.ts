@@ -10,6 +10,18 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  h1 {
+    color: ${colors.white};
+    font-size: 40px;
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
 `;
 
 export const Content = styled.div`

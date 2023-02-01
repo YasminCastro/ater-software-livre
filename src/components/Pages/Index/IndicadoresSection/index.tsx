@@ -1,4 +1,3 @@
-import { colors } from "@/styles/GlobalStyles";
 import { Title } from "@mantine/core";
 import Indicador from "./indicador";
 import { Container, Content, Wrapper } from "./styles";
@@ -11,8 +10,6 @@ const ParticipeSection: React.FC = () => {
           size="h2"
           style={{
             fontFamily: "'Lato', sans-serif",
-            color: colors.white,
-            fontSize: 40,
           }}
         >
           INDICADORES

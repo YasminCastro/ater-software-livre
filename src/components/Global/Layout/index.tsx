@@ -57,6 +57,10 @@ const VerticalLine = styled.div`
   @media (max-width: 1100px) {
     height: 5601px;
   }
+
+  @media (max-width: 1000px) {
+    height: 5129px;
+  }
 `;
 
 const MetodologiaHorizontalLine = styled.div`
@@ -73,7 +77,7 @@ const MetodologiaHorizontalLine = styled.div`
   }
 
   @media (max-width: 1000px) {
-    top: 720px;
+    top: 718px;
   }
 `;
 
@@ -93,6 +97,10 @@ const IndicadoresHorizontalLine = styled.div`
   @media (max-width: 1100px) {
     top: 2570px;
   }
+
+  @media (max-width: 1000px) {
+    top: 2300px;
+  }
 `;
 
 const ParticipeHorizontalLine = styled.div`
@@ -110,6 +118,10 @@ const ParticipeHorizontalLine = styled.div`
 
   @media (max-width: 1300px) {
     top: 5387px;
+  }
+
+  @media (max-width: 1000px) {
+    top: 4930px;
   }
 `;
 
