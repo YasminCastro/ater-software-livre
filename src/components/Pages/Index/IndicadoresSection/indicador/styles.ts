@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   max-width: 540px;
+  height: auto;
 
   margin-bottom: 14px;
   margin-top: 50px;
@@ -45,6 +46,30 @@ export const Container = styled.div`
 
     img {
       max-width: 600px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    max-width: 450px;
+
+    img {
+      max-width: 450px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    max-width: 400px;
+
+    img {
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    max-width: 350px;
+
+    img {
+      max-width: 350px;
     }
   }
 `;

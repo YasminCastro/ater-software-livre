@@ -33,10 +33,25 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-evenly;
 
+  .mantine-Card-root {
+    width: 100%;
+    max-width: 580px;
+    height: 400px;
+
+    background: ${colors.darkerGray};
+    border: 1px solid ${colors.white};
+    border-radius: 20px;
+  }
+
   @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
     margin-top: -28px;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 500px;
+    height: 600px;
   }
 `;
 

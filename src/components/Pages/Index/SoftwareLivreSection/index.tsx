@@ -42,12 +42,6 @@ const SoftwareLivreSection: React.FC = () => {
 
       <Card
         style={{
-          background: colors.darkerGray,
-          border: isMobileSize ? "" : `1px solid ${colors.white}`,
-          borderRadius: isMobileSize ? 10 : 20,
-          width: "100%",
-          maxWidth: 580,
-          height: isMobileSize ? 300 : 400,
           fontFamily: "'Lato', sans-serif",
         }}
       >

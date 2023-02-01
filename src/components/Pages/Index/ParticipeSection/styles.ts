@@ -80,5 +80,10 @@ export const ButtonsBlock = styled.div`
     @media (max-width: 1000px) {
       font-size: 18px;
     }
+
+    @media (max-width: 650px) {
+      font-size: 16px;
+      padding: 12px 16px;
+    }
   }
 `;

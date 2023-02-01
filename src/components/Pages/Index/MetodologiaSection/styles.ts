@@ -52,6 +52,10 @@ export const Content = styled.div`
   @media (max-width: 1000px) {
     font-size: 18px;
   }
+
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
 `;
 
 export const ButtonsBlock = styled.div`
@@ -95,5 +99,16 @@ export const ButtonsBlock = styled.div`
     @media (max-width: 1000px) {
       font-size: 18px;
     }
+
+    @media (max-width: 650px) {
+      font-size: 16px;
+      padding: 12px 16px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+    width: fit-content;
+    gap: 12px;
   }
 `;

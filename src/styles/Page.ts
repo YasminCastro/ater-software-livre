@@ -30,4 +30,12 @@ export const PageContainer = styled.div`
   @media (max-width: 880px) {
     max-width: 600px;
   }
+
+  @media (max-width: 650px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 560px) {
+    max-width: 400px;
+  }
 `;
