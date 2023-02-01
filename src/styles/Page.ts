@@ -26,4 +26,8 @@ export const PageContainer = styled.div`
   @media (max-width: 1100px) {
     max-width: 700px;
   }
+
+  @media (max-width: 880px) {
+    max-width: 600px;
+  }
 `;
