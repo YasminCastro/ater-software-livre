@@ -36,15 +36,14 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1100px) {
-    max-width: 540px;
+    max-width: 600px;
 
     p {
-      font-size: 28px;
+      font-size: 18px;
     }
 
     img {
-      margin-top: 14px;
-      max-width: 540px;
+      max-width: 600px;
     }
   }
 `;

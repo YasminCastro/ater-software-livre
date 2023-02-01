@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   margin-top: 100px;
+  width: 100%;
 `;
 
 export const Container = styled.div`
@@ -24,6 +25,6 @@ export const Content = styled.div`
 
   @media (max-width: 1100px) {
     flex-direction: column;
-    align-items: center;
+    gap: 0;
   }
 `;

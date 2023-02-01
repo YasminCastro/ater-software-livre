@@ -63,7 +63,7 @@ export const ButtonsBlock = styled.div`
     }
 
     @media (max-width: 1100px) {
-      padding: 20px 40px;
+      padding: 16px 30px;
     }
   }
 `;

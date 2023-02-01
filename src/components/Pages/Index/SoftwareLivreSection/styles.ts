@@ -33,7 +33,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-evenly;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
     margin-top: -28px;
@@ -49,7 +49,7 @@ export const Animation = styled.div`
     color: ${colors.white};
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     animation: ${fadeInLeft} 1s linear;
     margin-bottom: 6px;
   }
