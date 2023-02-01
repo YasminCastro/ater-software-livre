@@ -42,7 +42,7 @@ const ResponsiveProvider: React.FC<any> = ({ children }) => {
   useEffect(() => {
     if (windowSize < 550) {
       setMobileSize(true);
-    } else if (windowSize < 920) {
+    } else if (windowSize < 810) {
       setTabletSize(true);
       setMobileSize(false);
     } else {
