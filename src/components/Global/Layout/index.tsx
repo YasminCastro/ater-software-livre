@@ -45,7 +45,7 @@ const MainContainer = styled.main`
 const VerticalLine = styled.div`
   width: 1px;
   background-color: white; /* Line color */
-  height: 3774px; /* Override in-line if you want specific height. */
+  height: 3870px; /* Override in-line if you want specific height. */
   left: 50px;
   position: absolute;
   z-index: 90;
