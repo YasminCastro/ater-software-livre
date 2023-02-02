@@ -25,13 +25,25 @@ const fadeInLeft = keyframes`
   }
 `;
 
-export const Container = styled.section`
+export const Wrapper = styled.section`
   width: 100%;
-
-  margin-top: 160px;
+  max-width: 1440px;
 
   display: flex;
-  justify-content: space-evenly;
+
+  align-items: center;
+`;
+
+export const Container = styled.div`
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  gap: 16px;
+
+  margin: 148px 98px 0 98px;
 
   .mantine-Card-root {
     width: 100%;
@@ -43,35 +55,52 @@ export const Container = styled.section`
     border-radius: 20px;
   }
 
-  @media (max-width: 1100px) {
-    flex-direction: column;
-    align-items: center;
-    margin-top: -28px;
+  @media (max-width: 1038px) {
+    gap: 10px;
+    margin-top: 64px;
   }
 
-  @media (max-width: 700px) {
-    max-width: 500px;
-    height: 600px;
+  @media (max-width: 650px) {
+    gap: 10px;
+    margin: 64px 58px 0 58px;
+
+    .mantine-Card-root {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    gap: 10px;
+    margin: 48px 38px 0 38px;
+
+    .mantine-Card-root {
+      height: 260px;
+    }
   }
 `;
 
 export const Animation = styled.div`
   animation: ${fadeIn} 1s linear;
+
   h1 {
     font-size: 60px;
-    margin-top: 140px;
     font-family: "'Lato', sans-serif";
     color: ${colors.white};
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1038px) {
     animation: ${fadeInLeft} 1s linear;
-    margin-bottom: 6px;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 650px) {
     h1 {
-      font-size: 50px;
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    h1 {
+      font-size: 40px;
     }
   }
 `;
@@ -88,6 +117,12 @@ export const ResultsList = styled.ul`
 
     :hover {
       color: ${colors.blue};
+    }
+  }
+
+  @media (max-width: 550px) {
+    li {
+      font-size: 16px;
     }
   }
 `;

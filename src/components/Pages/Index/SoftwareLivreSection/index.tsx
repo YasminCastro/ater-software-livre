@@ -1,14 +1,10 @@
-import { Container, Animation, ResultsList } from "./styles";
+import { Container, Animation, ResultsList, Wrapper } from "./styles";
 import { AiOutlineSearch } from "react-icons/ai";
 import { ChangeEvent, useState } from "react";
 import { Card, Input } from "@mantine/core";
-import { colors } from "@/styles/GlobalStyles";
 import { Title } from "@mantine/core";
-import { useResponsive } from "@/Providers/MobileHeader";
 
 const SoftwareLivreSection: React.FC = () => {
-  const { isMobileSize } = useResponsive();
-
   const [filteredSearch, setFilteredSearch] = useState<string[]>([]);
   const strings = [
     "abelha ",
@@ -28,38 +24,40 @@ const SoftwareLivreSection: React.FC = () => {
   };
 
   return (
-    <Container>
-      <Animation>
-        <Title
-          size="h1"
+    <Wrapper>
+      <Container>
+        <Animation>
+          <Title
+            size="h1"
+            style={{
+              fontFamily: "'Lato', sans-serif",
+            }}
+          >
+            Software
+          </Title>
+        </Animation>
+
+        <Card
           style={{
             fontFamily: "'Lato', sans-serif",
           }}
         >
-          Software
-        </Title>
-      </Animation>
+          <Input
+            radius="md"
+            size="lg"
+            placeholder="Buscar..."
+            rightSection={<AiOutlineSearch size={26} />}
+            onChange={handleChange}
+          />
 
-      <Card
-        style={{
-          fontFamily: "'Lato', sans-serif",
-        }}
-      >
-        <Input
-          radius="md"
-          size="lg"
-          placeholder="Buscar..."
-          rightSection={<AiOutlineSearch size={26} />}
-          onChange={handleChange}
-        />
-
-        <ResultsList>
-          {filteredSearch.map((word) => {
-            return <li key={word}>{word}</li>;
-          })}
-        </ResultsList>
-      </Card>
-    </Container>
+          <ResultsList>
+            {filteredSearch.map((word) => {
+              return <li key={word}>{word}</li>;
+            })}
+          </ResultsList>
+        </Card>
+      </Container>
+    </Wrapper>
   );
 };
 
