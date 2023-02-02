@@ -14,34 +14,50 @@ const fadeIn = keyframes`
 `;
 
 export const Wrapper = styled.section`
-  margin-top: 100px;
   width: 100%;
+  max-width: 1440px;
+
+  display: flex;
+
+  align-items: center;
 `;
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
 
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
 
-  margin-bottom: 96px;
+  margin: 148px 98px;
 
   h1 {
     color: ${colors.white};
     font-size: 40px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1038px) {
+    margin-top: 64px;
     h1 {
       font-size: 30px;
     }
+  }
+
+  @media (max-width: 650px) {
+    margin: 64px 58px 0 58px;
+  }
+
+  @media (max-width: 450px) {
+    margin: 48px 38px 0 38px;
   }
 `;
 
 export const ButtonsBlock = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+
   margin-top: 28px;
 
   a {
@@ -51,7 +67,7 @@ export const ButtonsBlock = styled.div`
     border: 1px solid ${colors.white};
     background: transparent;
 
-    padding: 20px 100px;
+    padding: 16px 100px;
 
     font-size: 24px;
     font-weight: bold;
@@ -67,23 +83,18 @@ export const ButtonsBlock = styled.div`
 
     display: flex;
     align-items: center;
-    gap: 40px;
 
     @media (max-width: 1300px) {
-      padding: 20px 60px;
+      padding: 16px 60px;
     }
 
     @media (max-width: 1100px) {
-      padding: 16px 30px;
-    }
-
-    @media (max-width: 1000px) {
       font-size: 18px;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 400px) {
       font-size: 16px;
-      padding: 12px 16px;
+      padding: 14px 48px;
     }
   }
 `;
