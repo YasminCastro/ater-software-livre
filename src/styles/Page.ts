@@ -19,7 +19,7 @@ export const PageContainer = styled.div`
 `;
 
 export const HorizontalLine = styled.div`
-  width: 60px;
+  width: 80px;
   background-color: white;
   height: 1px;
   float: left;
