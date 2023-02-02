@@ -37,18 +37,18 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1038px) {
-    margin-top: 64px;
+    margin: 64px 98px;
     h1 {
       font-size: 30px;
     }
   }
 
   @media (max-width: 650px) {
-    margin: 64px 58px 0 58px;
+    margin: 64px 58px;
   }
 
   @media (max-width: 450px) {
-    margin: 48px 38px 0 38px;
+    margin: 48px 38px;
   }
 `;
 
