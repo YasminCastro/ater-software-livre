@@ -33,3 +33,16 @@ export const HorizontalLine = styled.div`
     display: none;
   }
 `;
+
+export const VerticalLine = styled.div`
+  width: 1px;
+  background-color: white;
+  height: 100%;
+  left: 50px;
+  position: fixed;
+  z-index: 80;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+`;
