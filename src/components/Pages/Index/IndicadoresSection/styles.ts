@@ -2,41 +2,140 @@ import { colors } from "@/styles/GlobalStyles";
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  margin-top: 100px;
   width: 100%;
+  max-width: 1440px;
+
+  display: flex;
+
+  align-items: center;
 `;
 
 export const Container = styled.div`
+  width: 100%;
+
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 148px 98px 0 98px;
 
   h1 {
     color: ${colors.white};
     font-size: 40px;
+    margin-bottom: 16px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1038px) {
+    margin-top: 64px;
     h1 {
       font-size: 30px;
-      margin-bottom: 20px;
     }
+  }
+
+  @media (max-width: 650px) {
+    margin: 64px 58px 0 58px;
+  }
+
+  @media (max-width: 450px) {
+    margin: 48px 38px 0 38px;
   }
 `;
 
-export const Content = styled.div`
-  color: ${colors.white};
-  font-size: 24px;
+export const InticadorContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  justify-content: center;
+  gap: 24px 16px;
 
-  @media (max-width: 1230px) {
-    gap: 16px;
+  margin-top: 45px;
+
+  @media (max-width: 500px) {
+    margin-top: 12px;
+  }
+`;
+
+export const IndicadorItem = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  img {
+    max-width: 540px;
+    min-height: 232px;
+
+    object-fit: cover;
+    transition: 0.15s linear;
+  }
+
+  p {
+    max-width: 540px;
+
+    font-size: 26px;
+    color: ${colors.white};
+    margin-bottom: 4px;
+    height: 70px;
+  }
+
+  @media (max-width: 1300px) {
+    img {
+      max-width: 444px;
+    }
+
+    p {
+      max-width: 444px;
+    }
   }
 
   @media (max-width: 1100px) {
-    flex-direction: column;
-    gap: 0;
+    img {
+      max-width: 600px;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 24px;
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    img {
+      max-width: 400px;
+    }
+
+    p {
+      max-width: 400px;
+      font-size: 22px;
+      height: 54px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      max-width: 350px;
+    }
+
+    p {
+      max-width: 350px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    img {
+      max-width: 300px;
+    }
+
+    p {
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    img {
+      max-width: 250px;
+    }
+
+    p {
+      max-width: 250px;
+    }
   }
 `;

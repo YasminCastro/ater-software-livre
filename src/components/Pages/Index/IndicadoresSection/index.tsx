@@ -1,6 +1,10 @@
 import { Title } from "@mantine/core";
-import Indicador from "./indicador";
-import { Container, Content, Wrapper } from "./styles";
+import {
+  Container,
+  InticadorContainer,
+  IndicadorItem,
+  Wrapper,
+} from "./styles";
 
 const ParticipeSection: React.FC = () => {
   return (
@@ -14,32 +18,32 @@ const ParticipeSection: React.FC = () => {
         >
           INDICADORES
         </Title>
-        <Content>
-          <Indicador
-            title="Geográfico (profissionais das artes)"
-            image="indicadores/artistas-geografico.png"
-          />
-          <Indicador
-            title="Categoria informada no Instagram (Ex: artista, arte etc.)"
-            image="indicadores/artistas-geografico.png"
-          />
-          <Indicador
-            title="Quantidade de seguidores (profissionais das artes)"
-            image="indicadores/artistas-quantidade-seguidores.png"
-          />
-          <Indicador
-            title="Perfil verificado (profissionais das artes)"
-            image="indicadores/artistas-quantidade-seguidores.png"
-          />
-          <Indicador
-            title="Geográfico (instituições de arte)"
-            image="indicadores/instituicoes-geografico.png"
-          />
-          <Indicador
-            title="Quantidade de seguidores (instituições de arte)"
-            image="indicadores/instituicoes-quantidade-seguidores.png"
-          />
-        </Content>
+        <InticadorContainer>
+          <IndicadorItem>
+            <p>Geográfico (profissionais das artes)</p>
+            <img src="indicadores/artistas-geografico.png" />
+          </IndicadorItem>
+          <IndicadorItem>
+            <p>Categoria informada no Instagram (Ex: artista, arte etc.)</p>
+            <img src="indicadores/artistas-geografico.png" />
+          </IndicadorItem>
+          <IndicadorItem>
+            <p>Quantidade de seguidores (profissionais das artes)</p>
+            <img src="indicadores/artistas-quantidade-seguidores.png" />
+          </IndicadorItem>
+          <IndicadorItem>
+            <p>Perfil verificado (profissionais das artes)</p>
+            <img src="indicadores/artistas-quantidade-seguidores.png" />
+          </IndicadorItem>
+          <IndicadorItem>
+            <p>Geográfico (instituições de arte)</p>
+            <img src="indicadores/instituicoes-geografico.png" />
+          </IndicadorItem>
+          <IndicadorItem>
+            <p>Quantidade de seguidores (instituições de arte)</p>
+            <img src="indicadores/instituicoes-quantidade-seguidores.png" />
+          </IndicadorItem>
+        </InticadorContainer>
       </Container>
     </Wrapper>
   );
