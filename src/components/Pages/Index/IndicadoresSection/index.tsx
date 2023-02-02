@@ -1,3 +1,4 @@
+import { HorizontalLine } from "@/styles/Page";
 import { Title } from "@mantine/core";
 import {
   Container,
@@ -10,6 +11,7 @@ const ParticipeSection: React.FC = () => {
   return (
     <Wrapper>
       <Container>
+        <HorizontalLine />
         <Title
           size="h2"
           style={{

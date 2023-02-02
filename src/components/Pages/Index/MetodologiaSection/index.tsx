@@ -2,11 +2,13 @@ import { ButtonsBlock, Container, Content, Wrapper } from "./styles";
 import { IoIosArrowForward } from "react-icons/io";
 import { colors } from "@/styles/GlobalStyles";
 import { Title } from "@mantine/core";
+import { HorizontalLine } from "@/styles/Page";
 
 const MetodologiaSection: React.FC = () => {
   return (
     <Wrapper>
       <Container>
+        <HorizontalLine />
         <Title
           size="h2"
           style={{

@@ -17,3 +17,19 @@ export const PageContainer = styled.div`
   align-items: center;
   flex-direction: column;
 `;
+
+export const HorizontalLine = styled.div`
+  width: 60px;
+  background-color: white;
+  height: 1px;
+  float: left;
+  position: absolute;
+  left: 0;
+  margin-top: 24px;
+
+  z-index: 90;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+`;

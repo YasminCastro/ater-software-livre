@@ -9,10 +9,7 @@ const Layout: React.FC<any> = ({ children }): JSX.Element => {
   return (
     <>
       <GlobalStyle />
-      <VerticalLine />
-      <MetodologiaHorizontalLine />
-      <ParticipeHorizontalLine />
-      <IndicadoresHorizontalLine />
+      {/* <VerticalLine /> */}
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
@@ -21,6 +18,7 @@ const Layout: React.FC<any> = ({ children }): JSX.Element => {
 };
 
 const MainContainer = styled.main`
+  padding-top: 56px;
   background-image: linear-gradient(
     120deg,
     #000000,
@@ -44,14 +42,39 @@ const MainContainer = styled.main`
 
 const VerticalLine = styled.div`
   width: 1px;
-  background-color: white; /* Line color */
-  height: 3870px; /* Override in-line if you want specific height. */
+  align-self: stretch;
+  background-color: white;
+  height: 3802px;
   left: 50px;
   position: absolute;
   z-index: 90;
 
+  /* @media (max-width: 1367px) {
+    height: 3826px;
+  }
+
+  @media (max-width: 1347px) {
+    height: 3850px;
+  }
+
+  @media (max-width: 1333px) {
+    height: 3874px;
+  }
+
+  @media (max-width: 1317px) {
+    height: 3897px;
+  }
+
   @media (max-width: 1300px) {
-    height: 3703px;
+    height: 3734px;
+  }
+
+  @media (max-width: 1239px) {
+    height: 3760px;
+  }
+
+  @media (max-width: 1287px) {
+    height: 3784px;
   }
 
   @media (max-width: 1100px) {
@@ -69,95 +92,7 @@ const VerticalLine = styled.div`
 
   @media (max-width: 810px) {
     display: none;
-  }
-`;
-
-const MetodologiaHorizontalLine = styled.div`
-  width: 80px;
-  background-color: white; /* Line color */
-  height: 1px; /* Override in-line if you want specific height. */
-  float: left;
-  top: 685px;
-  position: absolute;
-  z-index: 90;
-
-  @media (max-width: 1100px) {
-    top: 720px;
-  }
-
-  @media (max-width: 1000px) {
-    top: 718px;
-  }
-
-  @media (max-width: 880px) {
-    width: 60px;
-  }
-
-  @media (max-width: 810px) {
-    display: none;
-  }
-`;
-
-const IndicadoresHorizontalLine = styled.div`
-  width: 80px;
-  background-color: white; /* Line color */
-  height: 1px; /* Override in-line if you want specific height. */
-  float: left;
-  top: 2085px;
-  position: absolute;
-  z-index: 90;
-
-  @media (max-width: 1300px) {
-    top: 2230px;
-  }
-
-  @media (max-width: 1100px) {
-    top: 2570px;
-  }
-
-  @media (max-width: 1000px) {
-    top: 2300px;
-  }
-
-  @media (max-width: 880px) {
-    width: 60px;
-    top: 2450px;
-  }
-
-  @media (max-width: 810px) {
-    display: none;
-  }
-`;
-
-const ParticipeHorizontalLine = styled.div`
-  width: 80px;
-  background-color: white; /* Line color */
-  height: 1px; /* Override in-line if you want specific height. */
-  float: left;
-  top: 3645px;
-  position: absolute;
-  z-index: 90;
-
-  @media (max-width: 1300px) {
-    top: 3480px;
-  }
-
-  @media (max-width: 1300px) {
-    top: 5387px;
-  }
-
-  @media (max-width: 1000px) {
-    top: 4930px;
-  }
-
-  @media (max-width: 880px) {
-    width: 60px;
-    top: 5080px;
-  }
-
-  @media (max-width: 810px) {
-    display: none;
-  }
+  } */
 `;
 
 export default Layout;
