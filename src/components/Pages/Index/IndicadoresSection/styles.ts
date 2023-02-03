@@ -60,8 +60,6 @@ export const IndicadorItem = styled.div`
 
   img {
     max-width: 540px;
-    min-height: 232px;
-
     object-fit: cover;
     transition: 0.15s linear;
   }
