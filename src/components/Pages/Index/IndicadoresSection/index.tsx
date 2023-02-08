@@ -27,7 +27,7 @@ const ParticipeSection: React.FC = () => {
           </IndicadorItem>
           <IndicadorItem>
             <p>Categoria informada no Instagram (Ex: artista, arte etc.)</p>
-            <img src="indicadores/artistas-geografico.png" />
+            <img src="indicadores/nuvem_1.png" />
           </IndicadorItem>
           <IndicadorItem>
             <p>Quantidade de seguidores (profissionais das artes)</p>
@@ -35,7 +35,7 @@ const ParticipeSection: React.FC = () => {
           </IndicadorItem>
           <IndicadorItem>
             <p>Perfil verificado (profissionais das artes)</p>
-            <img src="indicadores/artistas-quantidade-seguidores.png" />
+            <img src="indicadores/nuvem_2.png" />
           </IndicadorItem>
           <IndicadorItem>
             <p>Geográfico (instituições de arte)</p>
