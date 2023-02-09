@@ -131,21 +131,21 @@ const MetodologiaSection: React.FC = () => {
           </p>
           <br />
           <p>
-            A base de dados do projeto {"<ATER>"} é pública e pode ser acessada{" "}
+            A base de dados do projeto {"<ATER>"} é pública e{" "}
             <a
               href="https://docs.google.com/spreadsheets/d/1vnp8Wf_mI4kMCqwsS16bwBZX43kz2EAPgy9CuYcn190/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              aqui
+              pode ser acessada aqui
             </a>
-            . O código do software também é público e pode ser acessado{" "}
+            . O código do software também é público e{" "}
             <a
               href="https://github.com/projetoater/software"
               target="_blank"
               rel="noreferrer"
             >
-              aqui
+              pode ser acessado aqui
             </a>
             . É para todos que desejam conhecer e compreender o projeto, e
             também serve como contribuição para pesquisas no campo da arte e
