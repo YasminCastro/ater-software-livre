@@ -30,6 +30,7 @@ const Header: React.FC = () => {
             href="https://www.instagram.com/projetoater"
             target="_blank"
             rel="noreferrer"
+            aria-label="Instagram"
           >
             <AiOutlineInstagram color={colors.white} size={32} />
           </a>
