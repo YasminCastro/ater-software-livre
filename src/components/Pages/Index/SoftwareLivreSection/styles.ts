@@ -53,6 +53,16 @@ export const Container = styled.div`
     background: ${colors.darkerGray};
     border: 1px solid ${colors.white};
     border-radius: 20px;
+
+    .mantine-InputWrapper-root {
+      width: 100%;
+    }
+
+    form {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
   }
 
   @media (max-width: 1038px) {
@@ -108,9 +118,7 @@ export const Animation = styled.div`
 export const ResultsList = styled.ul`
   width: 100%;
 
-  margin-top: 16px;
-
-  li {
+  a {
     color: ${colors.white};
     font-size: 20px;
     margin-bottom: 4px;
@@ -124,5 +132,53 @@ export const ResultsList = styled.ul`
     li {
       font-size: 16px;
     }
+  }
+`;
+
+export const Scroll = styled.div`
+  overflow-y: auto;
+  height: 300px;
+  margin-top: 16px;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  @media (max-width: 650px) {
+    height: 205px;
+  }
+
+  @media (max-width: 450px) {
+    height: 164px;
   }
 `;
