@@ -58,6 +58,10 @@ export const IndicadorItem = styled.div`
   display: flex;
   flex-direction: column;
 
+  .modal-image {
+    width: 540px;
+  }
+
   img {
     max-width: 540px;
     object-fit: cover;
@@ -67,9 +71,9 @@ export const IndicadorItem = styled.div`
   p {
     max-width: 540px;
 
-    font-size: 26px;
+    font-size: 20px;
     color: ${colors.white};
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     height: 70px;
   }
 
