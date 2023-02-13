@@ -8,24 +8,38 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { Container, Animation, ResultsList, Wrapper, Scroll } from "./styles";
 
 const SoftwareLivreSection: React.FC = () => {
+  const [response, setResponse] = useState<string[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+
   const form = useForm({
     initialValues: {
       query: "",
     },
     validate: {
       query: (value) =>
-        value.length < 1 ? "Pesquisa precisa ter no mínimo 1 caracter." : null,
+        value.length < 1 ? "A busca não pode estar vazia." : null,
     },
   });
 
-  const [response, setResponse] = useState<string[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
-
   const handleSubmit = async ({ query }: { query: string }) => {
     setLoading(true);
-    const { data } = await axios.post(`/api/apiPesquisa`, { query });
-    setResponse(data);
-    setLoading(false);
+    try {
+      const { data } = await axios.post(`/api/apiPesquisa`, { query });
+      if (data.length === 0) {
+        form.setFieldError(
+          "query",
+          "Nenhum resultado encontrado. Ex.: BR, SP, GO, RJ..."
+        );
+      }
+      setResponse(data);
+    } catch (error) {
+      form.setFieldError(
+        "query",
+        "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
