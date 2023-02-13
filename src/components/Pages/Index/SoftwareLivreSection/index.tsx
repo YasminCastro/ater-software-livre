@@ -87,7 +87,7 @@ const SoftwareLivreSection: React.FC = () => {
                 const instagramUrl = `https://www.instagram.com/${parsedUsername}`;
                 return (
                   <li key={username}>
-                    <a href={instagramUrl} target="_blank">
+                    <a href={instagramUrl} target="_blank" rel="noreferrer">
                       {username}
                     </a>
                   </li>
