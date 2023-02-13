@@ -11,6 +11,7 @@ import {
   Wrapper,
   ImageModalHeaderWrapper,
   ImageModalHeaderContainer,
+  StyledLightbox,
 } from "./styles";
 import { colors } from "@/styles/GlobalStyles";
 
@@ -62,7 +63,7 @@ const ParticipeSection: React.FC = () => {
     return (
       <ImageModalHeaderWrapper>
         <ImageModalHeaderContainer>
-          {images[currentImageIndex].alt}
+          <h3>{images[currentImageIndex].alt}</h3>
           <button onClick={() => setOpen(false)}>
             <AiFillCloseCircle size={18} color={colors.white} />
           </button>
@@ -73,7 +74,7 @@ const ParticipeSection: React.FC = () => {
 
   return (
     <Wrapper>
-      <Lightbox
+      <StyledLightbox
         isOpen={isOpen}
         onClose={() => setOpen(false)}
         onPrev={gotoPrevious}

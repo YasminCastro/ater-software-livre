@@ -1,5 +1,6 @@
 import { colors } from "@/styles/GlobalStyles";
 import styled from "styled-components";
+import Lightbox from "react-spring-lightbox";
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -94,8 +95,7 @@ export const IndicadorItem = styled.div`
 
     p {
       max-width: 600px;
-      font-size: 24px;
-      height: 40px;
+      height: auto;
     }
   }
 
@@ -106,8 +106,7 @@ export const IndicadorItem = styled.div`
 
     p {
       max-width: 400px;
-      font-size: 22px;
-      height: 54px;
+      font-size: 16px;
     }
   }
 
@@ -150,10 +149,33 @@ export const ImageModalHeaderContainer = styled.div`
   color: ${colors.whiteGray};
   display: flex;
   justify-content: space-between;
-  margin: 8px 120px;
+  margin: 16px 120px 0;
+  gap: 16px;
   button {
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  @media (max-width: 1200px) {
+    margin: 16px 60px 0;
+  }
+
+  @media (max-width: 650px) {
+    margin: 16px 30px 0;
+  }
+
+  @media (max-width: 400px) {
+    margin: 16px 16px 0;
+  }
+`;
+
+export const StyledLightbox = styled(Lightbox)`
+  background: rgba(0, 0, 0, 0.8);
+  * ::selection {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  * ::-moz-selection {
+    background: rgba(0, 0, 0, 0.8);
   }
 `;
