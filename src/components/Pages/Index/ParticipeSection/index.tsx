@@ -19,8 +19,13 @@ const ParticipeSection: React.FC = () => {
           PARTICIPE
         </Title>
         <ButtonsBlock>
-          <a href="#">
-            formulário de inscrição <IoIosArrowForward color={colors.white} />
+          <a
+            href="https://docs.google.com/forms/d/1_XJatwUc1AFKt994RjAWIAT1UCpoMEE1BgBpHhIb6fE/viewform?edit_requested=true"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Colabore com a nossa base de dados!{" "}
+            <IoIosArrowForward color={colors.white} />
           </a>
         </ButtonsBlock>
       </Container>
