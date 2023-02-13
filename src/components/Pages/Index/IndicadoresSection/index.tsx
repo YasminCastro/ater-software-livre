@@ -1,16 +1,88 @@
 import { HorizontalLine } from "@/styles/Page";
 import { Title } from "@mantine/core";
-import { RModalImages } from "react-modal-images";
+import { useState } from "react";
+import Lightbox, { ImagesListType } from "react-spring-lightbox";
+import { AiFillCloseCircle } from "react-icons/ai";
+
 import {
   Container,
   InticadorContainer,
   IndicadorItem,
   Wrapper,
+  ImageModalHeaderWrapper,
+  ImageModalHeaderContainer,
 } from "./styles";
+import { colors } from "@/styles/GlobalStyles";
+
+const images: ImagesListType = [
+  {
+    src: "indicadores/artistas-geografico.png",
+    loading: "lazy",
+    alt: "Geográfico <> Profissionais das Artes: indica a localização compartilhada no campo bio do perfil no Instagram.",
+  },
+  {
+    src: "indicadores/instituicoes-geografico.png",
+    loading: "lazy",
+    alt: "Instituições de Arte: indica a localização compartilhada no campo bio do perfil no Instagram.",
+  },
+  {
+    src: "indicadores/artistas-quantidade-seguidores.png",
+    loading: "lazy",
+    alt: "Profissionais das Artes: indica a quantidade de seguidores dos perfis no Instagram presentes na base de dados do projeto.",
+  },
+  {
+    src: "indicadores/instituicoes-quantidade-seguidores.png",
+    loading: "lazy",
+    alt: "Instituições de Arte: indica a quantidade de seguidores dos perfis no Instagram presentes na base de dados do projeto.",
+  },
+  {
+    src: "indicadores/nuvem_1.png",
+    loading: "lazy",
+    alt: "Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto.",
+  },
+  {
+    src: "indicadores/nuvem_2.png",
+    loading: "lazy",
+    alt: "Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto.",
+  },
+];
 
 const ParticipeSection: React.FC = () => {
+  const [currentImageIndex, setCurrentIndex] = useState(0);
+  const [isOpen, setOpen] = useState(false);
+
+  const gotoPrevious = () =>
+    currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
+
+  const gotoNext = () =>
+    currentImageIndex + 1 < images.length &&
+    setCurrentIndex(currentImageIndex + 1);
+
+  const ImageModalHeader = () => {
+    return (
+      <ImageModalHeaderWrapper>
+        <ImageModalHeaderContainer>
+          {images[currentImageIndex].alt}
+          <button onClick={() => setOpen(false)}>
+            <AiFillCloseCircle size={18} color={colors.white} />
+          </button>
+        </ImageModalHeaderContainer>
+      </ImageModalHeaderWrapper>
+    );
+  };
+
   return (
     <Wrapper>
+      <Lightbox
+        isOpen={isOpen}
+        onClose={() => setOpen(false)}
+        onPrev={gotoPrevious}
+        onNext={gotoNext}
+        images={images}
+        currentIndex={currentImageIndex}
+        className="modal-image"
+        renderHeader={() => <ImageModalHeader />}
+      />
       <Container>
         <HorizontalLine />
         <Title
@@ -28,30 +100,34 @@ const ParticipeSection: React.FC = () => {
               Geográfico {"<>"} Profissionais das Artes: indica a localização
               compartilhada no campo bio do perfil no Instagram.
             </p>
-            <RModalImages
-              small={"indicadores/artistas-geografico.png"}
-              medium={"indicadores/artistas-geografico.png"}
-              large={"indicadores/artistas-geografico.png"}
-              alt={
-                "Profissionais das Artes: indica a localização compartilhada no campo bio do perfil no Instagram."
-              }
-              className="modal-image"
-            />
+            <button
+              onClick={() => {
+                setOpen(true);
+                setCurrentIndex(0);
+              }}
+            >
+              <img
+                src="indicadores/artistas-geografico.png"
+                alt="Profissionais das Artes: indica a localização compartilhada no campo bio do perfil no Instagram."
+              />
+            </button>
           </IndicadorItem>
           <IndicadorItem>
             <p>
               Geográfico {"<>"} Instituições de Arte: indica a localização
               compartilhada no campo bio do perfil no Instagram.
             </p>
-            <RModalImages
-              small={"indicadores/instituicoes-geografico.png"}
-              medium={"indicadores/instituicoes-geografico.png"}
-              large={"indicadores/instituicoes-geografico.png"}
-              alt={
-                "Instituições de Arte: indica a localização compartilhada no campo bio do perfil no Instagram."
-              }
-              className="modal-image"
-            />
+            <button
+              onClick={() => {
+                setOpen(true);
+                setCurrentIndex(1);
+              }}
+            >
+              <img
+                src="indicadores/instituicoes-geografico.png"
+                alt="Instituições de Arte: indica a localização compartilhada no campo bio do perfil no Instagram."
+              />
+            </button>
           </IndicadorItem>
           <IndicadorItem>
             <p>
@@ -59,15 +135,17 @@ const ParticipeSection: React.FC = () => {
               quantidade de seguidores dos perfis no Instagram presentes na base
               de dados do projeto.
             </p>
-            <RModalImages
-              small={"indicadores/artistas-quantidade-seguidores.png"}
-              medium={"indicadores/artistas-quantidade-seguidores.png"}
-              large={"indicadores/artistas-quantidade-seguidores.png"}
-              alt={
-                "Profissionais das Artes: indica a quantidade de seguidores dos perfis no Instagram presentes na base de dados do projeto."
-              }
-              className="modal-image"
-            />
+            <button
+              onClick={() => {
+                setOpen(true);
+                setCurrentIndex(2);
+              }}
+            >
+              <img
+                src="indicadores/artistas-quantidade-seguidores.png"
+                alt="Profissionais das Artes: indica a quantidade de seguidores dos perfis no Instagram presentes na base de dados do projeto."
+              />
+            </button>
           </IndicadorItem>
           <IndicadorItem>
             <p>
@@ -75,15 +153,17 @@ const ParticipeSection: React.FC = () => {
               quantidade de seguidores dos perfis no Instagram presentes na base
               de dados do projeto.
             </p>
-            <RModalImages
-              small={"indicadores/instituicoes-quantidade-seguidores.png"}
-              medium={"indicadores/instituicoes-quantidade-seguidores.png"}
-              large={"indicadores/instituicoes-quantidade-seguidores.png"}
-              alt={
-                "Instituições de Arte: indica a quantidade de seguidores dos perfis no Instagram presentes na base de dados do projeto."
-              }
-              className="modal-image"
-            />
+            <button
+              onClick={() => {
+                setOpen(true);
+                setCurrentIndex(3);
+              }}
+            >
+              <img
+                src="indicadores/instituicoes-quantidade-seguidores.png"
+                alt="Profissionais das Artes: indica a quantidade de seguidores dos perfis no Instagram presentes na base de dados do projeto."
+              />
+            </button>
           </IndicadorItem>
           <IndicadorItem>
             <p>
@@ -91,15 +171,17 @@ const ParticipeSection: React.FC = () => {
               dos perfis no Instagram dos profissionais das artes presentes na
               base de dados do projeto.
             </p>
-            <RModalImages
-              small={"indicadores/nuvem_1.png"}
-              medium={"indicadores/nuvem_1.png"}
-              large={"indicadores/nuvem_1.png"}
-              alt={
-                "Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto."
-              }
-              className="modal-image"
-            />
+            <button
+              onClick={() => {
+                setOpen(true);
+                setCurrentIndex(4);
+              }}
+            >
+              <img
+                src="indicadores/nuvem_1.png"
+                alt="Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto."
+              />
+            </button>
           </IndicadorItem>
           <IndicadorItem>
             <p>
@@ -107,15 +189,17 @@ const ParticipeSection: React.FC = () => {
               dos perfis no Instagram dos profissionais das artes presentes na
               base de dados do projeto.
             </p>
-            <RModalImages
-              small={"indicadores/nuvem_2.png"}
-              medium={"indicadores/nuvem_2.png"}
-              large={"indicadores/nuvem_2.png"}
-              alt={
-                "Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto."
-              }
-              className="modal-image"
-            />
+            <button
+              onClick={() => {
+                setOpen(true);
+                setCurrentIndex(5);
+              }}
+            >
+              <img
+                src="indicadores/nuvem_2.png"
+                alt="Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto."
+              />
+            </button>
           </IndicadorItem>
         </InticadorContainer>
       </Container>

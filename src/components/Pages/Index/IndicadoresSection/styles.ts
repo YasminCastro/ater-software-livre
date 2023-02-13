@@ -141,3 +141,19 @@ export const IndicadorItem = styled.div`
     }
   }
 `;
+
+export const ImageModalHeaderWrapper = styled.div`
+  background: rgba(0, 0, 0, 0.8);
+`;
+
+export const ImageModalHeaderContainer = styled.div`
+  color: ${colors.whiteGray};
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 120px;
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+`;
