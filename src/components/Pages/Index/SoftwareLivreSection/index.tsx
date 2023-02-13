@@ -4,7 +4,6 @@ import { Title } from "@mantine/core";
 import { Button, Card, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { AiOutlineSearch } from "react-icons/ai";
-import InfiniteScroll from "react-infinite-scroller";
 
 import { Container, Animation, ResultsList, Wrapper, Scroll } from "./styles";
 
