@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  background: #4c96cb;
+  background: rgba(0, 0, 0, 0.78);
+  border-top: 1px solid white;
   z-index: 100;
 
   width: 100%;
@@ -15,7 +16,7 @@ export const FooterWrapper = styled.footer`
 
 export const FooterContainer = styled.div`
   width: 100%;
-  max-width: 1020px;
+  max-width: 900px;
 
   display: flex;
   flex-direction: column;
