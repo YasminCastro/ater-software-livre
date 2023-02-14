@@ -72,7 +72,6 @@ const SoftwareLivreSection: React.FC = () => {
               radius="md"
               size="lg"
               type="submit"
-              variant="outline"
               leftIcon={<AiOutlineSearch size={18} />}
               loading={loading}
             >

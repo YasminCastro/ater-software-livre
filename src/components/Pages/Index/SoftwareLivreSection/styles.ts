@@ -50,7 +50,7 @@ export const Container = styled.div`
     max-width: 580px;
     height: 400px;
 
-    background: ${colors.darkerGray};
+    background: rgba(150, 150, 150, 0.1);
     border: 1px solid ${colors.white};
     border-radius: 20px;
 
@@ -62,6 +62,21 @@ export const Container = styled.div`
       display: flex;
       align-items: flex-start;
       gap: 6px;
+
+      button {
+        background: transparent;
+        border: 1px solid ${colors.white};
+
+        :hover {
+          background: ${colors.blue};
+          transition: 0.5s;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
     }
   }
 
