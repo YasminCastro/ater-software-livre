@@ -108,7 +108,7 @@ export const Animation = styled.div`
   animation: ${fadeIn} 1s linear;
 
   h1 {
-    font-size: 60px;
+    font-size: 84px;
     font-family: "'Lato', sans-serif";
     color: ${colors.white};
   }

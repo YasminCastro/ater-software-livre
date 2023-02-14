@@ -16,8 +16,8 @@ export const HeaderWrapper = styled.header`
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  height: 58px;
+  justify-content: center;
+  height: 50px;
 
   @media (max-width: 810px) {
     justify-content: flex-end;
@@ -31,7 +31,7 @@ export const HeaderLeft = styled.div`
     font-weight: 400;
     font-size: 14px;
     border-right: 1px solid ${colors.white};
-    padding: 20px 58px;
+    padding: 16px 58px;
 
     :hover {
       color: ${colors.green};
@@ -43,7 +43,6 @@ export const HeaderLeft = styled.div`
     }
 
     :nth-last-child(4) {
-      background-color: ${colors.mediumGrey};
       color: ${colors.green};
     }
 
