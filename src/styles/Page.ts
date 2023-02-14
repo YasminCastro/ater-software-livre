@@ -38,7 +38,7 @@ export const VerticalLine = styled.div`
   width: 1px;
   background-color: white;
   height: 100%;
-  left: 140px;
+  left: 70px;
   position: fixed;
   z-index: 80;
 
