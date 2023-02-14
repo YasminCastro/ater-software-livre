@@ -47,7 +47,7 @@ export const HeaderLeft = styled.div`
     }
 
     @media (max-width: 1088px) {
-      padding: 20px 40px;
+      padding: 16px 40px;
     }
 
     @media (max-width: 810px) {
