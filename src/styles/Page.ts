@@ -19,13 +19,13 @@ export const PageContainer = styled.div`
 `;
 
 export const HorizontalLine = styled.div`
-  width: 80px;
+  width: 100%;
   background-color: white;
   height: 1px;
   float: left;
   position: absolute;
   left: 0;
-  margin-top: 24px;
+  margin-top: 42px;
 
   z-index: 90;
 
@@ -38,7 +38,7 @@ export const VerticalLine = styled.div`
   width: 1px;
   background-color: white;
   height: 100%;
-  left: 50px;
+  left: 140px;
   position: fixed;
   z-index: 80;
 
