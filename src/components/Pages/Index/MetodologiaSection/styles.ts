@@ -53,6 +53,7 @@ export const Content = styled.div`
   color: ${colors.white};
   text-align: justify;
   font-size: 20px;
+  font-weight: 300;
 
   a {
     color: ${colors.white};

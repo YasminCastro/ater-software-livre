@@ -52,7 +52,7 @@ const SoftwareLivreSection: React.FC = () => {
               fontFamily: "'Lato', sans-serif",
             }}
           >
-            Software
+            SOFTWARE
           </Title>
         </Animation>
 

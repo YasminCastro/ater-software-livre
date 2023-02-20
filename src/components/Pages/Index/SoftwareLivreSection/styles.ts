@@ -108,7 +108,7 @@ export const Animation = styled.div`
   animation: ${fadeIn} 1s linear;
 
   h1 {
-    font-size: 84px;
+    font-size: 64px;
     font-family: "'Lato', sans-serif";
     color: ${colors.white};
   }
@@ -119,13 +119,13 @@ export const Animation = styled.div`
 
   @media (max-width: 650px) {
     h1 {
-      font-size: 48px;
+      font-size: 42px;
     }
   }
 
   @media (max-width: 450px) {
     h1 {
-      font-size: 40px;
+      font-size: 36px;
     }
   }
 `;
