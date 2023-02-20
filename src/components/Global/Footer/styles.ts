@@ -21,4 +21,25 @@ export const FooterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media (max-width: 800px) {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    img {
+      height: auto;
+      width: 100px;
+    }
+  }
 `;
