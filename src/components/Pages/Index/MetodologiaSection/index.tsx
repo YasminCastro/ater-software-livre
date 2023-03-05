@@ -159,7 +159,7 @@ const MetodologiaSection: React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            acesso à planilha
+            acesso ao banco de dados
             <IoIosArrowForward color={colors.white} />
           </a>
 
