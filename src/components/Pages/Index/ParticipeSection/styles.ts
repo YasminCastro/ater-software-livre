@@ -74,22 +74,21 @@ export const ButtonsBlock = styled.div`
     align-items: center;
 
     cursor: pointer;
+  }
 
-    image {
-      fill: green;
+  @media (max-width: 680px) {
+    gap: 16px;
+
+    a {
+      font-size: 14px;
     }
 
-    /* @media (max-width: 1300px) {
-      padding: 16px 60px;
+    img {
+      width: 100px;
     }
+  }
 
-    @media (max-width: 1100px) {
-      font-size: 18px;
-    }
-
-    @media (max-width: 400px) {
-      font-size: 16px;
-      padding: 14px 48px;
-    } */
+  @media (max-width: 400px) {
+    gap: 4px;
   }
 `;
