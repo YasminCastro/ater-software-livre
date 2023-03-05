@@ -23,6 +23,7 @@ const ParticipeSection: React.FC = () => {
           <a
             href="https://docs.google.com/forms/d/1_XJatwUc1AFKt994RjAWIAT1UCpoMEE1BgBpHhIb6fE/viewform?edit_requested=true"
             target="_blank"
+            rel="noreferrer"
           >
             <Image
               src="/participe/banco-de-dados.svg"
@@ -36,6 +37,7 @@ const ParticipeSection: React.FC = () => {
           <a
             href="https://www.sympla.com.br/evento-online/programa-educativo-projeto-ater/1897732"
             target="_blank"
+            rel="noreferrer"
           >
             <Image
               src="/participe/inscrever.svg"
