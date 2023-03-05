@@ -77,6 +77,13 @@ export const Container = styled.div`
           padding: 10px;
         }
       }
+
+      .mantine-TextInput-error {
+        color: white;
+      }
+      .mantine-TextInput-input {
+        color: black;
+      }
     }
   }
 

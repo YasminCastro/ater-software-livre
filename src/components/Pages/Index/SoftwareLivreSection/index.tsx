@@ -26,10 +26,7 @@ const SoftwareLivreSection: React.FC = () => {
     try {
       const { data } = await axios.post(`/api/apiPesquisa`, { query });
       if (data.length === 0) {
-        form.setFieldError(
-          "query",
-          "Nenhum resultado encontrado. Ex.: BR, SP, GO, RJ..."
-        );
+        form.setFieldError("query", "Nenhum resultado encontrado.");
       }
       setResponse(data);
     } catch (error) {
