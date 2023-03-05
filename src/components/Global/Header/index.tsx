@@ -18,11 +18,17 @@ const Header: React.FC = () => {
     <HeaderWrapper>
       <HeaderContainer>
         <HeaderLeft>
-          <a href="#">Início</a>
+          <a href="https://www.projetoater.com.br">Início</a>
           <a href="#">Software</a>
-          <a href="#">Educativo</a>
-          <a href="#">Outros desdobramentos</a>
-          <a href="#">Contato</a>
+          <a href="https://www.projetoater.com.br/c%C3%B3pia-in%C3%ADcio">
+            Educativo
+          </a>
+          <a href="https://www.projetoater.com.br/c%C3%B3pia-educativo">
+            Outros desdobramentos
+          </a>
+          <a href="https://www.projetoater.com.br/c%C3%B3pia-educativo-1">
+            Contato
+          </a>
         </HeaderLeft>
         <HeaderRight>
           <a
