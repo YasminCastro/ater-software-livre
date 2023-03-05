@@ -54,37 +54,32 @@ export const Container = styled.div`
 
 export const ButtonsBlock = styled.div`
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 30px;
+
+  width: 100%;
+  justify-content: center;
 
   margin-top: 28px;
+  text-align: center;
 
   a {
+    max-width: 180px;
     color: ${colors.white};
-    border-radius: 36px;
 
-    border: 1px solid ${colors.white};
-    background: transparent;
-
-    padding: 16px 100px;
-
-    font-size: 24px;
-    font-weight: bold;
-
-    :hover {
-      background: ${colors.blue};
-      transition: 0.5s;
-
-      svg {
-        animation: ${fadeIn} 1s forwards;
-      }
-    }
+    font-size: 18px;
+    font-weight: 200;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
 
-    @media (max-width: 1300px) {
+    cursor: pointer;
+
+    image {
+      fill: green;
+    }
+
+    /* @media (max-width: 1300px) {
       padding: 16px 60px;
     }
 
@@ -95,6 +90,6 @@ export const ButtonsBlock = styled.div`
     @media (max-width: 400px) {
       font-size: 16px;
       padding: 14px 48px;
-    }
+    } */
   }
 `;
