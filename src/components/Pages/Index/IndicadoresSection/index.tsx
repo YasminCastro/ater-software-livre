@@ -188,7 +188,8 @@ const ParticipeSection: React.FC = () => {
             <p>
               Nuvem de palavras com os principais termos que aparecem nas bios
               dos perfis no Instagram dos profissionais das artes presentes na
-              base de dados do projeto.
+              base de dados do projeto. Filtrando apenas os perfis
+              "verificados".
             </p>
             <button
               onClick={() => {

@@ -74,7 +74,7 @@ export const IndicadorItem = styled.div`
 
     font-size: 20px;
     color: ${colors.white};
-    margin-bottom: 8px;
+    margin-bottom: 30px;
     height: 70px;
   }
 
@@ -94,6 +94,7 @@ export const IndicadorItem = styled.div`
     }
 
     p {
+      margin-bottom: 16px;
       max-width: 600px;
       height: auto;
     }
