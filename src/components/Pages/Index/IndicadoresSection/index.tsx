@@ -44,7 +44,7 @@ const images: ImagesListType = [
   {
     src: "indicadores/nuvem_2.png",
     loading: "lazy",
-    alt: "Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto.",
+    alt: 'Nuvem de palavras com os principais termos que aparecem nas bios dos perfis no Instagram dos profissionais das artes presentes na base de dados do projeto. Filtrando apenas os perfis "verificados".',
   },
 ];
 
