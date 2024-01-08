@@ -4,7 +4,7 @@
   <table>
     <tr>
       <td>
-        <img alt="Demonstration" src="https://drive.google.com/file/d/1DeSyedelLwrs4A6aSH-TH0ZcnNAFIL49/view?usp=drive_link" width="800px" />
+        <img alt="Demonstration" src="https://drive.google.com/file/d/1DeSyedelLwrs4A6aSH-TH0ZcnNAFIL49/view?usp=sharing" width="800px" />
       </td>
     </tr>
   </table>
